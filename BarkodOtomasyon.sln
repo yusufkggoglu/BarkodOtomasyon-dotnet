@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.33403.129
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarkodOtomasyon", "BarkodOtomasyon\BarkodOtomasyon.csproj", "{5CC8DCCF-BBB8-460A-A430-9A522E38588A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CC8DCCF-BBB8-460A-A430-9A522E38588A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CC8DCCF-BBB8-460A-A430-9A522E38588A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CC8DCCF-BBB8-460A-A430-9A522E38588A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CC8DCCF-BBB8-460A-A430-9A522E38588A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCCA1051-C44A-4D04-B37D-5AF700CF6822}
+	EndGlobalSection
+EndGlobal
