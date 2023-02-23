@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BarkodOtomasyon.Properties
+namespace Forms.Properties
 {
 
 
