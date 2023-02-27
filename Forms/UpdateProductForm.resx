@@ -117,33 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="dqwProducts.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="dqwProducts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 388</value>
-  </data>
-  <data name="dqwProducts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1934, 672</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="dqwProducts.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;dqwProducts.Name" xml:space="preserve">
-    <value>dqwProducts</value>
-  </data>
-  <data name="&gt;&gt;dqwProducts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dqwProducts.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;dqwProducts.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="btnDelete.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt</value>
   </data>
@@ -153,6 +127,7 @@
   <data name="btnDelete.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 71</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnDelete.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
@@ -219,31 +194,31 @@
   <data name="&gt;&gt;cmbKamera.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="btnAdd.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnGüncelle.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt</value>
   </data>
-  <data name="btnAdd.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnGuncelle.Location" type="System.Drawing.Point, System.Drawing">
     <value>1263, 103</value>
   </data>
-  <data name="btnAdd.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnGuncelle.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 71</value>
   </data>
-  <data name="btnAdd.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnGuncelle.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="btnAdd.Text" xml:space="preserve">
-    <value>Kaydet</value>
+  <data name="btnGuncelle.Text" xml:space="preserve">
+    <value>Güncelle</value>
   </data>
-  <data name="&gt;&gt;btnAdd.Name" xml:space="preserve">
-    <value>btnAdd</value>
+  <data name="&gt;&gt;btnGuncelle.Name" xml:space="preserve">
+    <value>btnGuncelle</value>
   </data>
-  <data name="&gt;&gt;btnAdd.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnGuncelle.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;btnAdd.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnGuncelle.Parent" xml:space="preserve">
     <value>groupControl1</value>
   </data>
-  <data name="&gt;&gt;btnAdd.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnGuncelle.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="tbxDiscount.Font" type="System.Drawing.Font, System.Drawing">
@@ -252,6 +227,7 @@
   <data name="tbxDiscount.Location" type="System.Drawing.Point, System.Drawing">
     <value>1263, 45</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tbxDiscount.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
@@ -668,10 +644,10 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="sidePanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1934, 381</value>
+    <value>1912, 381</value>
   </data>
   <data name="sidePanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="sidePanel1.Text" xml:space="preserve">
     <value>sidePanel1</value>
@@ -688,20 +664,38 @@
   <data name="&gt;&gt;sidePanel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="dqwProducts.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="dqwProducts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 388</value>
+  </data>
+  <data name="dqwProducts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1912, 672</value>
+  </data>
+  <data name="dqwProducts.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dqwProducts.Name" xml:space="preserve">
+    <value>dqwProducts</value>
+  </data>
+  <data name="&gt;&gt;dqwProducts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dqwProducts.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dqwProducts.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 21</value>
+    <value>7, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1934, 1061</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 10pt</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>1912, 1039</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>1918, 1018</value>
@@ -710,10 +704,10 @@
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Ürün Giriş</value>
+    <value>Fiyatı Güncelleme</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>AddProductForm</value>
+    <value>UpdateProductForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>

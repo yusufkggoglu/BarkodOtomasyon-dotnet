@@ -1,6 +1,6 @@
 ﻿namespace Forms
 {
-    partial class AddProductForm
+    partial class UpdateProductForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddProductForm));
-            this.dqwProducts = new System.Windows.Forms.DataGridView();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateProductForm));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnRead = new DevExpress.XtraEditors.SimpleButton();
             this.cmbKamera = new System.Windows.Forms.ComboBox();
-            this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
+            this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.tbxDiscount = new System.Windows.Forms.TextBox();
             this.tbxStockAmount = new System.Windows.Forms.TextBox();
             this.tbxBarcode = new System.Windows.Forms.TextBox();
@@ -48,30 +47,19 @@
             this.lblProductName = new DevExpress.XtraEditors.LabelControl();
             this.lblBarcode = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
-            ((System.ComponentModel.ISupportInitialize)(this.dqwProducts)).BeginInit();
+            this.dqwProducts = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             this.sidePanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dqwProducts)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dqwProducts
-            // 
-            this.dqwProducts.AllowUserToAddRows = false;
-            this.dqwProducts.AllowUserToDeleteRows = false;
-            resources.ApplyResources(this.dqwProducts, "dqwProducts");
-            this.dqwProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dqwProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dqwProducts.Name = "dqwProducts";
-            this.dqwProducts.ReadOnly = true;
-            this.dqwProducts.RowTemplate.Height = 24;
-//            this.dqwProducts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dqwProducts_CellClick);
             // 
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.btnDelete);
             this.groupControl1.Controls.Add(this.btnRead);
             this.groupControl1.Controls.Add(this.cmbKamera);
-            this.groupControl1.Controls.Add(this.btnAdd);
+            this.groupControl1.Controls.Add(this.btnGuncelle);
             this.groupControl1.Controls.Add(this.tbxDiscount);
             this.groupControl1.Controls.Add(this.tbxStockAmount);
             this.groupControl1.Controls.Add(this.tbxBarcode);
@@ -94,7 +82,6 @@
             this.btnDelete.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btnDelete, "btnDelete");
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnRead
             // 
@@ -108,13 +95,13 @@
             this.cmbKamera.FormattingEnabled = true;
             this.cmbKamera.Name = "cmbKamera";
             // 
-            // btnAdd
+            // btnGuncelle
             // 
-            this.btnAdd.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnAdd.Appearance.Font")));
-            this.btnAdd.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btnAdd, "btnAdd");
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnGuncelle.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnGüncelle.Appearance.Font")));
+            this.btnGuncelle.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnGuncelle, "btnGuncelle");
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // tbxDiscount
             // 
@@ -194,33 +181,44 @@
             resources.ApplyResources(this.sidePanel1, "sidePanel1");
             this.sidePanel1.Name = "sidePanel1";
             // 
-            // AddProductForm
+            // dqwProducts
             // 
-            this.Appearance.Options.UseFont = true;
+            this.dqwProducts.AllowUserToAddRows = false;
+            this.dqwProducts.AllowUserToDeleteRows = false;
+            resources.ApplyResources(this.dqwProducts, "dqwProducts");
+            this.dqwProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dqwProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dqwProducts.Name = "dqwProducts";
+            this.dqwProducts.ReadOnly = true;
+            this.dqwProducts.RowTemplate.Height = 24;
+            this.dqwProducts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dqwProducts_CellClick);
+            // 
+            // UpdateProductForm
+            // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dqwProducts);
             this.Controls.Add(this.sidePanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "AddProductForm";
+            this.Name = "UpdateProductForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.AddProductForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dqwProducts)).EndInit();
+            this.Load += new System.EventHandler(this.UpdateProductForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             this.sidePanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dqwProducts)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dqwProducts;
+
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.SimpleButton btnDelete;
         private DevExpress.XtraEditors.SimpleButton btnRead;
         private System.Windows.Forms.ComboBox cmbKamera;
-        private DevExpress.XtraEditors.SimpleButton btnAdd;
+        private DevExpress.XtraEditors.SimpleButton btnGuncelle;
         private System.Windows.Forms.TextBox tbxDiscount;
         private System.Windows.Forms.TextBox tbxStockAmount;
         private System.Windows.Forms.TextBox tbxBarcode;
@@ -234,5 +232,6 @@
         private DevExpress.XtraEditors.LabelControl lblProductName;
         private DevExpress.XtraEditors.LabelControl lblBarcode;
         private DevExpress.XtraEditors.SidePanel sidePanel1;
+        private System.Windows.Forms.DataGridView dqwProducts;
     }
 }

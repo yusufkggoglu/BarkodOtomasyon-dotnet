@@ -34,5 +34,15 @@ namespace Forms
             frm.Show();
             this.Hide();
         }
+
+        private void btnUpdateProduct_Click(object sender, EventArgs e)
+        {
+            UpdateProductForm frm = new UpdateProductForm()
+            {
+                user = user,
+            };
+            frm.Show();
+            this.Hide();
+        }
     }
 }

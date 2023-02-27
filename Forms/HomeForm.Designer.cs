@@ -73,7 +73,7 @@
             this.btnReports.Appearance.Options.UseFont = true;
             this.btnReports.Appearance.Options.UseForeColor = true;
             this.btnReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnReports.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.btnReports.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnReports.ImageOptions.SvgImage")));
             this.btnReports.Location = new System.Drawing.Point(63, 191);
             this.btnReports.Name = "btnReports";
             this.btnReports.Size = new System.Drawing.Size(236, 144);
@@ -93,7 +93,7 @@
             this.btnAddProduct.Appearance.Options.UseFont = true;
             this.btnAddProduct.Appearance.Options.UseForeColor = true;
             this.btnAddProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAddProduct.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            this.btnAddProduct.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAddProduct.ImageOptions.SvgImage")));
             this.btnAddProduct.Location = new System.Drawing.Point(305, 41);
             this.btnAddProduct.Name = "btnAddProduct";
             this.btnAddProduct.Size = new System.Drawing.Size(236, 144);
@@ -114,7 +114,7 @@
             this.btnStock.Appearance.Options.UseFont = true;
             this.btnStock.Appearance.Options.UseForeColor = true;
             this.btnStock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnStock.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
+            this.btnStock.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnStock.ImageOptions.SvgImage")));
             this.btnStock.Location = new System.Drawing.Point(305, 191);
             this.btnStock.Name = "btnStock";
             this.btnStock.Size = new System.Drawing.Size(236, 144);
@@ -134,12 +134,13 @@
             this.btnUpdateProduct.Appearance.Options.UseFont = true;
             this.btnUpdateProduct.Appearance.Options.UseForeColor = true;
             this.btnUpdateProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnUpdateProduct.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton4.ImageOptions.SvgImage")));
+            this.btnUpdateProduct.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnUpdateProduct.ImageOptions.SvgImage")));
             this.btnUpdateProduct.Location = new System.Drawing.Point(547, 41);
             this.btnUpdateProduct.Name = "btnUpdateProduct";
             this.btnUpdateProduct.Size = new System.Drawing.Size(236, 144);
             this.btnUpdateProduct.TabIndex = 4;
             this.btnUpdateProduct.Text = "Fiyat Güncelle";
+            this.btnUpdateProduct.Click += new System.EventHandler(this.btnUpdateProduct_Click);
             // 
             // btnSettings
             // 
@@ -154,7 +155,7 @@
             this.btnSettings.Appearance.Options.UseFont = true;
             this.btnSettings.Appearance.Options.UseForeColor = true;
             this.btnSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnSettings.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton5.ImageOptions.SvgImage")));
+            this.btnSettings.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSettings.ImageOptions.SvgImage")));
             this.btnSettings.Location = new System.Drawing.Point(547, 191);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(236, 144);
@@ -174,7 +175,7 @@
             this.btnBackUp.Appearance.Options.UseFont = true;
             this.btnBackUp.Appearance.Options.UseForeColor = true;
             this.btnBackUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnBackUp.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton6.ImageOptions.SvgImage")));
+            this.btnBackUp.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnBackUp.ImageOptions.SvgImage")));
             this.btnBackUp.Location = new System.Drawing.Point(63, 341);
             this.btnBackUp.Name = "btnBackUp";
             this.btnBackUp.Size = new System.Drawing.Size(236, 144);
@@ -194,7 +195,7 @@
             this.btnChangeUser.Appearance.Options.UseFont = true;
             this.btnChangeUser.Appearance.Options.UseForeColor = true;
             this.btnChangeUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnChangeUser.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton7.ImageOptions.SvgImage")));
+            this.btnChangeUser.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnChangeUser.ImageOptions.SvgImage")));
             this.btnChangeUser.Location = new System.Drawing.Point(305, 341);
             this.btnChangeUser.Name = "btnChangeUser";
             this.btnChangeUser.Size = new System.Drawing.Size(236, 144);
@@ -214,7 +215,7 @@
             this.btnExit.Appearance.Options.UseFont = true;
             this.btnExit.Appearance.Options.UseForeColor = true;
             this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnExit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton8.ImageOptions.SvgImage")));
+            this.btnExit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnExit.ImageOptions.SvgImage")));
             this.btnExit.Location = new System.Drawing.Point(547, 341);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(236, 144);
