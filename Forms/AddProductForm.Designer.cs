@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddProductForm));
             this.dqwProducts = new System.Windows.Forms.DataGridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnBack = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnRead = new DevExpress.XtraEditors.SimpleButton();
             this.cmbKamera = new System.Windows.Forms.ComboBox();
@@ -48,6 +50,7 @@
             this.lblProductName = new DevExpress.XtraEditors.LabelControl();
             this.lblBarcode = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
+            this.btnUpdate = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dqwProducts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
@@ -64,10 +67,13 @@
             this.dqwProducts.Name = "dqwProducts";
             this.dqwProducts.ReadOnly = true;
             this.dqwProducts.RowTemplate.Height = 24;
-//            this.dqwProducts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dqwProducts_CellClick);
+            this.dqwProducts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dqwProducts_CellClick);
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.btnUpdate);
+            this.groupControl1.Controls.Add(this.textBox1);
+            this.groupControl1.Controls.Add(this.btnBack);
             this.groupControl1.Controls.Add(this.btnDelete);
             this.groupControl1.Controls.Add(this.btnRead);
             this.groupControl1.Controls.Add(this.cmbKamera);
@@ -87,6 +93,21 @@
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.ShowCaption = false;
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // btnBack
+            // 
+            this.btnBack.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnBack.Appearance.Font")));
+            this.btnBack.Appearance.Options.UseFont = true;
+            this.btnBack.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnBack.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.btnBack, "btnBack");
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnDelete
             // 
@@ -194,6 +215,14 @@
             resources.ApplyResources(this.sidePanel1, "sidePanel1");
             this.sidePanel1.Name = "sidePanel1";
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font")));
+            this.btnUpdate.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnUpdate, "btnUpdate");
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
             // AddProductForm
             // 
             this.Appearance.Options.UseFont = true;
@@ -204,6 +233,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "AddProductForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddProductForm_FormClosing);
             this.Load += new System.EventHandler(this.AddProductForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dqwProducts)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
@@ -234,5 +264,8 @@
         private DevExpress.XtraEditors.LabelControl lblProductName;
         private DevExpress.XtraEditors.LabelControl lblBarcode;
         private DevExpress.XtraEditors.SidePanel sidePanel1;
+        private DevExpress.XtraEditors.SimpleButton btnBack;
+        private System.Windows.Forms.TextBox textBox1;
+        private DevExpress.XtraEditors.SimpleButton btnUpdate;
     }
 }

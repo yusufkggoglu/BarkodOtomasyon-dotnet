@@ -17,14 +17,11 @@ namespace Forms
         {
             InitializeComponent();
         }
-
         public User user;
-
         private void HomeForm_Load(object sender, EventArgs e)
         {
 
         }
-
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
             AddProductForm frm = new AddProductForm()
@@ -35,12 +32,9 @@ namespace Forms
             this.Hide();
         }
 
-        private void btnUpdateProduct_Click(object sender, EventArgs e)
+        private void btnSale_Click(object sender, EventArgs e)
         {
-            UpdateProductForm frm = new UpdateProductForm()
-            {
-                user = user,
-            };
+            SaleForm frm = new SaleForm();
             frm.Show();
             this.Hide();
         }

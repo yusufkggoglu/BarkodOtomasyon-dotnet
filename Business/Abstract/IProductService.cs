@@ -15,5 +15,6 @@ namespace Business.Abstract
         void Update(Product product);
         void Delete(Product product);
         Product Get(int id);
+        Product GetBarcode(string barcode);
     }
 }
