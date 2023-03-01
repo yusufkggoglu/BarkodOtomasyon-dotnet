@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddProductForm));
             this.dqwProducts = new System.Windows.Forms.DataGridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnUpdate = new DevExpress.XtraEditors.SimpleButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnBack = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
@@ -50,7 +51,6 @@
             this.lblProductName = new DevExpress.XtraEditors.LabelControl();
             this.lblBarcode = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
-            this.btnUpdate = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dqwProducts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
@@ -93,6 +93,14 @@
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.ShowCaption = false;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnUpdate.Appearance.Font")));
+            this.btnUpdate.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnUpdate, "btnUpdate");
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // textBox1
             // 
@@ -214,14 +222,6 @@
             this.sidePanel1.Controls.Add(this.groupControl1);
             resources.ApplyResources(this.sidePanel1, "sidePanel1");
             this.sidePanel1.Name = "sidePanel1";
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font")));
-            this.btnUpdate.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btnUpdate, "btnUpdate");
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // AddProductForm
             // 

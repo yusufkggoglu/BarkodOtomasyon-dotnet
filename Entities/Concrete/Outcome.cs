@@ -13,5 +13,6 @@ namespace Entities.Concrete
         public string Name { get; set; }
         public int Amount { get; set; }
         public int UnitPrice { get; set; }
+        public DateTime Date { get; set; }
     }
 }

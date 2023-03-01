@@ -144,7 +144,7 @@
   <data name="&gt;&gt;dqwProducts.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="simpleButton1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnUpdate.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt</value>
   </data>
   <data name="btnUpdate.Location" type="System.Drawing.Point, System.Drawing">
