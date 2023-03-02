@@ -71,6 +71,7 @@
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.btnClearAll = new DevExpress.XtraEditors.SimpleButton();
             this.btnBack = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSale = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dqw)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,7 +131,7 @@
             // 
             // btn1
             // 
-            this.btn1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font")));
+            this.btn1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn1.Appearance.Font")));
             this.btn1.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn1, "btn1");
             this.btn1.Name = "btn1";
@@ -138,7 +139,7 @@
             // 
             // btn2
             // 
-            this.btn2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton2.Appearance.Font")));
+            this.btn2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn2.Appearance.Font")));
             this.btn2.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn2, "btn2");
             this.btn2.Name = "btn2";
@@ -146,7 +147,7 @@
             // 
             // btn3
             // 
-            this.btn3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
+            this.btn3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn3.Appearance.Font")));
             this.btn3.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn3, "btn3");
             this.btn3.Name = "btn3";
@@ -154,7 +155,7 @@
             // 
             // btn4
             // 
-            this.btn4.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton4.Appearance.Font")));
+            this.btn4.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn4.Appearance.Font")));
             this.btn4.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn4, "btn4");
             this.btn4.Name = "btn4";
@@ -162,7 +163,7 @@
             // 
             // btn5
             // 
-            this.btn5.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton5.Appearance.Font")));
+            this.btn5.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn5.Appearance.Font")));
             this.btn5.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn5, "btn5");
             this.btn5.Name = "btn5";
@@ -170,7 +171,7 @@
             // 
             // btn6
             // 
-            this.btn6.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton6.Appearance.Font")));
+            this.btn6.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn6.Appearance.Font")));
             this.btn6.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn6, "btn6");
             this.btn6.Name = "btn6";
@@ -178,7 +179,7 @@
             // 
             // btn7
             // 
-            this.btn7.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton7.Appearance.Font")));
+            this.btn7.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn7.Appearance.Font")));
             this.btn7.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn7, "btn7");
             this.btn7.Name = "btn7";
@@ -186,7 +187,7 @@
             // 
             // btn8
             // 
-            this.btn8.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton8.Appearance.Font")));
+            this.btn8.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn8.Appearance.Font")));
             this.btn8.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn8, "btn8");
             this.btn8.Name = "btn8";
@@ -194,7 +195,7 @@
             // 
             // btn9
             // 
-            this.btn9.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton9.Appearance.Font")));
+            this.btn9.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn9.Appearance.Font")));
             this.btn9.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn9, "btn9");
             this.btn9.Name = "btn9";
@@ -202,7 +203,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton10.Appearance.Font")));
+            this.btnClear.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnClear.Appearance.Font")));
             this.btnClear.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btnClear, "btnClear");
             this.btnClear.Name = "btnClear";
@@ -210,7 +211,7 @@
             // 
             // btn0
             // 
-            this.btn0.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton11.Appearance.Font")));
+            this.btn0.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn0.Appearance.Font")));
             this.btn0.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn0, "btn0");
             this.btn0.Name = "btn0";
@@ -218,7 +219,7 @@
             // 
             // btnComma
             // 
-            this.btnComma.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton12.Appearance.Font")));
+            this.btnComma.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnComma.Appearance.Font")));
             this.btnComma.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btnComma, "btnComma");
             this.btnComma.Name = "btnComma";
@@ -226,7 +227,7 @@
             // 
             // btnOtherProduct
             // 
-            this.btnOtherProduct.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font1")));
+            this.btnOtherProduct.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnOtherProduct.Appearance.Font")));
             this.btnOtherProduct.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btnOtherProduct, "btnOtherProduct");
             this.btnOtherProduct.Name = "btnOtherProduct";
@@ -235,7 +236,7 @@
             // btnBarcode
             // 
             this.btnBarcode.Appearance.BackColor = System.Drawing.Color.Yellow;
-            this.btnBarcode.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font2")));
+            this.btnBarcode.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnBarcode.Appearance.Font")));
             this.btnBarcode.Appearance.Options.UseBackColor = true;
             this.btnBarcode.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btnBarcode, "btnBarcode");
@@ -244,7 +245,7 @@
             // 
             // btnSaled
             // 
-            this.btnSaled.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font3")));
+            this.btnSaled.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnSaled.Appearance.Font")));
             this.btnSaled.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btnSaled, "btnSaled");
             this.btnSaled.Name = "btnSaled";
@@ -253,7 +254,7 @@
             // btnAmount
             // 
             this.btnAmount.Appearance.BackColor = System.Drawing.Color.Yellow;
-            this.btnAmount.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font4")));
+            this.btnAmount.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnAmount.Appearance.Font")));
             this.btnAmount.Appearance.Options.UseBackColor = true;
             this.btnAmount.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btnAmount, "btnAmount");
@@ -263,7 +264,7 @@
             // btnCash
             // 
             this.btnCash.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnCash.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font5")));
+            this.btnCash.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnCash.Appearance.Font")));
             this.btnCash.Appearance.Options.UseBackColor = true;
             this.btnCash.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btnCash, "btnCash");
@@ -273,7 +274,7 @@
             // btnCard
             // 
             this.btnCard.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnCard.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton2.Appearance.Font1")));
+            this.btnCard.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnCard.Appearance.Font")));
             this.btnCard.Appearance.Options.UseBackColor = true;
             this.btnCard.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btnCard, "btnCard");
@@ -283,7 +284,7 @@
             // btnCashCard
             // 
             this.btnCashCard.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnCashCard.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font1")));
+            this.btnCashCard.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnCashCard.Appearance.Font")));
             this.btnCashCard.Appearance.Options.UseBackColor = true;
             this.btnCashCard.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btnCashCard, "btnCashCard");
@@ -298,7 +299,7 @@
             // btn10
             // 
             this.btn10.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn10.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton6.Appearance.Font1")));
+            this.btn10.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn10.Appearance.Font")));
             this.btn10.Appearance.Options.UseBackColor = true;
             this.btn10.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn10, "btn10");
@@ -308,7 +309,7 @@
             // btn50
             // 
             this.btn50.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn50.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton7.Appearance.Font1")));
+            this.btn50.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn50.Appearance.Font")));
             this.btn50.Appearance.Options.UseBackColor = true;
             this.btn50.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn50, "btn50");
@@ -318,7 +319,7 @@
             // btn100
             // 
             this.btn100.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn100.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton8.Appearance.Font1")));
+            this.btn100.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn100.Appearance.Font")));
             this.btn100.Appearance.Options.UseBackColor = true;
             this.btn100.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn100, "btn100");
@@ -328,7 +329,7 @@
             // btn200
             // 
             this.btn200.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn200.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton9.Appearance.Font1")));
+            this.btn200.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn200.Appearance.Font")));
             this.btn200.Appearance.Options.UseBackColor = true;
             this.btn200.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn200, "btn200");
@@ -361,9 +362,9 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnBack.Appearance.Font")));
+            this.btnDelete.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnDelete.Appearance.Font")));
             this.btnDelete.Appearance.Options.UseFont = true;
-            this.btnDelete.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnBack.ImageOptions.SvgImage")));
+            this.btnDelete.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDelete.ImageOptions.SvgImage")));
             resources.ApplyResources(this.btnDelete, "btnDelete");
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -371,7 +372,7 @@
             // simpleButton1
             // 
             this.simpleButton1.Appearance.BackColor = System.Drawing.Color.Yellow;
-            this.simpleButton1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font6")));
+            this.simpleButton1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font")));
             this.simpleButton1.Appearance.Options.UseBackColor = true;
             this.simpleButton1.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.simpleButton1, "simpleButton1");
@@ -381,7 +382,7 @@
             // simpleButton2
             // 
             this.simpleButton2.Appearance.BackColor = System.Drawing.Color.Yellow;
-            this.simpleButton2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton2.Appearance.Font2")));
+            this.simpleButton2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton2.Appearance.Font")));
             this.simpleButton2.Appearance.Options.UseBackColor = true;
             this.simpleButton2.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.simpleButton2, "simpleButton2");
@@ -390,7 +391,7 @@
             // 
             // btnClearAll
             // 
-            this.btnClearAll.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font2")));
+            this.btnClearAll.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnClearAll.Appearance.Font")));
             this.btnClearAll.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btnClearAll, "btnClearAll");
             this.btnClearAll.Name = "btnClearAll";
@@ -405,11 +406,20 @@
             this.btnBack.Name = "btnBack";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // btnSale
+            // 
+            this.btnSale.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnSale.Appearance.Font")));
+            this.btnSale.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnSale, "btnSale");
+            this.btnSale.Name = "btnSale";
+            this.btnSale.Click += new System.EventHandler(this.btnSale_Click);
+            // 
             // SaleForm
             // 
             this.AcceptButton = this.btnAdd;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnSale);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.labelControl4);
@@ -458,6 +468,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SaleForm_FormClosing);
             this.Load += new System.EventHandler(this.SaleForm_Load);
+//            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SaleForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dqw)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -508,5 +519,6 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.SimpleButton btnClearAll;
         private DevExpress.XtraEditors.SimpleButton btnBack;
+        private DevExpress.XtraEditors.SimpleButton btnSale;
     }
 }

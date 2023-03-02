@@ -22,10 +22,15 @@ namespace Forms
         {
             InitializeComponent();
             _productService = new ProductManager(new EfProductDal());
+            _ıncomeService = new IncomeManager(new EfIncomeDal());
         }
+
         IProductService _productService;
+        IIncomeService _ıncomeService;
+        public User user;
         FilterInfoCollection Cihazlar;
         VideoCaptureDevice kameram;
+
         private void SaleForm_Load(object sender, EventArgs e)
         {
             CreateDataGridView();
@@ -333,6 +338,11 @@ namespace Forms
 
         private void btnClearAll_Click(object sender, EventArgs e)
         {
+            ClearAll();
+        }
+
+        private void ClearAll()
+        {
             dqw.Rows.Clear();
             tbxSaled.Text = "0";
             tbxAmount.Text = "1";
@@ -340,6 +350,37 @@ namespace Forms
             tbxChange.Text = "0";
             tbxMoney.Text = "0";
             tbxSum.Text = "0";
+        }
+
+        private void btnSale_Click(object sender, EventArgs e)
+        {
+            Product p;
+            decimal sum = 0;
+            for (int i = 0; i < dqw.Rows.Count - 1; i++)
+            {
+                p = _productService.GetByName(dqw.Rows[i].Cells[0].Value.ToString());
+                int amount = p.StockAmount - Convert.ToInt32(dqw.Rows[i].Cells[1].Value);
+                sum += Convert.ToDecimal(dqw.Rows[i].Cells[2].Value);
+                _productService.Update(new Product()
+                {
+                    ID = p.ID,
+                    Name = p.Name,
+                    Discount = p.Discount,
+                    PurchasePrice = p.PurchasePrice,
+                    SalePrice = p.SalePrice,
+                    Barcode = p.Barcode,
+                    StockAmount = amount,
+                });
+            }
+            ClearAll();
+            _ıncomeService.Add(new Income()
+            {
+                Name = "Satış",
+                Date = DateTime.Now,
+                Amount = 1,
+                UnitPrice = sum,
+            });
+            DevExpress.XtraEditors.XtraMessageBox.Show("Satış Yapıldı !");
         }
     }
 }

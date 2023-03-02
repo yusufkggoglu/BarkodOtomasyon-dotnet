@@ -12,7 +12,7 @@ namespace Entities.Concrete
         public int ID { get; set; }
         public string Name { get; set; }
         public int Amount { get; set; }
-        public int UnitPrice { get; set; }
+        public decimal UnitPrice { get; set; }
         public DateTime Date { get; set; }
     }
 }

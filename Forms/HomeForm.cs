@@ -34,7 +34,20 @@ namespace Forms
 
         private void btnSale_Click(object sender, EventArgs e)
         {
-            SaleForm frm = new SaleForm();
+            SaleForm frm = new SaleForm()
+            {
+                user = user,
+            };
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnStock_Click(object sender, EventArgs e)
+        {
+            StockForm frm = new StockForm()
+            {
+                user = user,
+            };
             frm.Show();
             this.Hide();
         }

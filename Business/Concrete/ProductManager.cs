@@ -41,6 +41,11 @@ namespace Business.Concrete
             return _productDal.Get(p => p.Barcode.Equals(barcode));
         }
 
+        public Product GetByName(string name)
+        {
+            return _productDal.Get(p => p.Name.Equals(name));
+        }
+
         public void Update(Product product)
         {
             _productDal.Update(product);

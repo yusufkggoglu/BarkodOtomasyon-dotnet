@@ -102,6 +102,7 @@
             resources.ApplyResources(this.btnStock, "btnStock");
             this.btnStock.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnStock.ImageOptions.SvgImage")));
             this.btnStock.Name = "btnStock";
+            this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
             // 
             // btnSettings
             // 
