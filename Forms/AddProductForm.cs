@@ -114,6 +114,7 @@ namespace Forms
             frm.Show();
             this.Hide();
             CameraOff();
+            this.Dispose();
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {

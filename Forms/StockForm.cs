@@ -50,6 +50,7 @@ namespace Forms
             };
             frm.Show();
             this.Hide();
+            this.Dispose();
         }
     }
 }

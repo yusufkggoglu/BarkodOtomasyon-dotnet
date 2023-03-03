@@ -35,6 +35,7 @@
             this.btnStock = new DevExpress.XtraEditors.SimpleButton();
             this.btnSettings = new DevExpress.XtraEditors.SimpleButton();
             this.btnExit = new DevExpress.XtraEditors.SimpleButton();
+            this.lblUserName = new DevExpress.XtraEditors.LabelControl();
             this.SuspendLayout();
             // 
             // btnSale
@@ -135,16 +136,25 @@
             resources.ApplyResources(this.btnExit, "btnExit");
             this.btnExit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnExit.ImageOptions.SvgImage")));
             this.btnExit.Name = "btnExit";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // lblUserName
+            // 
+            this.lblUserName.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lblUserName.Appearance.Font")));
+            this.lblUserName.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.lblUserName, "lblUserName");
+            this.lblUserName.Name = "lblUserName";
             // 
             // HomeForm
             // 
-            this.Appearance.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.Appearance.BackColor2 = ((System.Drawing.Color)(resources.GetObject("HomeForm.Appearance.BackColor2")));
             this.Appearance.BorderColor = System.Drawing.Color.Violet;
             this.Appearance.Options.UseBackColor = true;
             this.Appearance.Options.UseBorderColor = true;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSettings);
             this.Controls.Add(this.btnStock);
@@ -156,6 +166,7 @@
             this.Name = "HomeForm";
             this.Load += new System.EventHandler(this.HomeForm_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -167,5 +178,6 @@
         private DevExpress.XtraEditors.SimpleButton btnStock;
         private DevExpress.XtraEditors.SimpleButton btnSettings;
         private DevExpress.XtraEditors.SimpleButton btnExit;
+        private DevExpress.XtraEditors.LabelControl lblUserName;
     }
 }

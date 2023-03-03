@@ -119,10 +119,10 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="flp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>823, 12</value>
+    <value>5, 5</value>
   </data>
   <data name="flp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1089, 451</value>
+    <value>1011, 419</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="flp.TabIndex" type="System.Int32, mscorlib">
@@ -135,16 +135,16 @@
     <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;flp.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl4</value>
   </data>
   <data name="&gt;&gt;flp.ZOrder" xml:space="preserve">
-    <value>42</value>
+    <value>0</value>
   </data>
   <data name="dqw.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 199</value>
+    <value>12, 253</value>
   </data>
   <data name="dqw.Size" type="System.Drawing.Size, System.Drawing">
-    <value>794, 548</value>
+    <value>794, 453</value>
   </data>
   <data name="dqw.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -159,13 +159,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dqw.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>4</value>
   </data>
   <data name="tbxAmount.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="tbxAmount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 145</value>
+    <value>5, 138</value>
   </data>
   <data name="tbxAmount.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -190,16 +190,16 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbxAmount.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl3</value>
   </data>
   <data name="&gt;&gt;tbxAmount.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>1</value>
   </data>
   <data name="tbxBarcode.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="tbxBarcode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 145</value>
+    <value>187, 138</value>
   </data>
   <data name="tbxBarcode.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -217,16 +217,16 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbxBarcode.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl3</value>
   </data>
   <data name="&gt;&gt;tbxBarcode.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>2</value>
   </data>
   <data name="labelControl1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="labelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>43, 113</value>
+    <value>36, 106</value>
   </data>
   <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 24</value>
@@ -244,16 +244,16 @@
     <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl3</value>
   </data>
   <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>3</value>
   </data>
   <data name="labelControl2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="labelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 113</value>
+    <value>187, 106</value>
   </data>
   <data name="labelControl2.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 24</value>
@@ -271,13 +271,13 @@
     <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl2.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl3</value>
   </data>
   <data name="&gt;&gt;labelControl2.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>5</value>
   </data>
   <data name="btnAdd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>313, 108</value>
+    <value>306, 101</value>
   </data>
   <data name="btnAdd.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 29</value>
@@ -295,13 +295,13 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btnAdd.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl3</value>
   </data>
   <data name="&gt;&gt;btnAdd.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>7</value>
   </data>
   <data name="cmbKamera.Location" type="System.Drawing.Point, System.Drawing">
-    <value>313, 78</value>
+    <value>306, 71</value>
   </data>
   <data name="cmbKamera.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 24</value>
@@ -316,16 +316,16 @@
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cmbKamera.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl3</value>
   </data>
   <data name="&gt;&gt;cmbKamera.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>6</value>
   </data>
   <data name="tbxMoney.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 19.8000011pt</value>
   </data>
   <data name="tbxMoney.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1085, 470</value>
+    <value>197, 5</value>
   </data>
   <data name="tbxMoney.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -349,16 +349,16 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbxMoney.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;tbxMoney.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>0</value>
   </data>
   <data name="btn1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1085, 541</value>
+    <value>197, 76</value>
   </data>
   <data name="btn1.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -376,16 +376,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btn1.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn1.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>1</value>
   </data>
   <data name="btn2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1191, 541</value>
+    <value>303, 76</value>
   </data>
   <data name="btn2.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -403,16 +403,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btn2.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn2.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>8</value>
   </data>
   <data name="btn3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1297, 541</value>
+    <value>409, 76</value>
   </data>
   <data name="btn3.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -430,16 +430,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btn3.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn3.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>10</value>
   </data>
   <data name="btn4.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1085, 647</value>
+    <value>197, 182</value>
   </data>
   <data name="btn4.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -457,16 +457,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btn4.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn4.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>21</value>
   </data>
   <data name="btn5.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1191, 647</value>
+    <value>303, 182</value>
   </data>
   <data name="btn5.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -484,16 +484,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btn5.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn5.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>19</value>
   </data>
   <data name="btn6.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1297, 647</value>
+    <value>409, 182</value>
   </data>
   <data name="btn6.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -511,16 +511,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btn6.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn6.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>17</value>
   </data>
   <data name="btn7.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1085, 753</value>
+    <value>197, 288</value>
   </data>
   <data name="btn7.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -538,16 +538,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btn7.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn7.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>15</value>
   </data>
   <data name="btn8.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1191, 753</value>
+    <value>303, 288</value>
   </data>
   <data name="btn8.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -565,16 +565,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btn8.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn8.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>13</value>
   </data>
   <data name="btn9.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1297, 753</value>
+    <value>409, 288</value>
   </data>
   <data name="btn9.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -592,16 +592,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btn9.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn9.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="btnClear.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btnClear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1085, 859</value>
+    <value>197, 394</value>
   </data>
   <data name="btnClear.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -619,16 +619,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btnClear.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btnClear.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
   </data>
   <data name="btn0.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn0.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1191, 859</value>
+    <value>303, 394</value>
   </data>
   <data name="btn0.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -646,16 +646,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btn0.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn0.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="btnComma.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btnComma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1297, 859</value>
+    <value>409, 394</value>
   </data>
   <data name="btnComma.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -673,7 +673,7 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btnComma.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btnComma.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -682,7 +682,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btnOtherProduct.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1414, 541</value>
+    <value>526, 76</value>
   </data>
   <data name="btnOtherProduct.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 100</value>
@@ -700,16 +700,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btnOtherProduct.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btnOtherProduct.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>12</value>
   </data>
   <data name="btnBarcode.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btnBarcode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1414, 647</value>
+    <value>526, 182</value>
   </data>
   <data name="btnBarcode.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 100</value>
@@ -727,16 +727,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btnBarcode.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btnBarcode.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="btnSaled.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btnSaled.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1414, 753</value>
+    <value>526, 288</value>
   </data>
   <data name="btnSaled.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 100</value>
@@ -754,16 +754,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btnSaled.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btnSaled.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>20</value>
   </data>
   <data name="btnAmount.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btnAmount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1414, 859</value>
+    <value>526, 394</value>
   </data>
   <data name="btnAmount.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 100</value>
@@ -781,19 +781,19 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btnAmount.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btnAmount.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>23</value>
   </data>
   <data name="btnCash.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btnCash.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 765</value>
+    <value>5, 17</value>
   </data>
   <data name="btnCash.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 193</value>
+    <value>132, 204</value>
   </data>
   <data name="btnCash.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -808,19 +808,19 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btnCash.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl2</value>
   </data>
   <data name="&gt;&gt;btnCash.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>3</value>
   </data>
   <data name="btnCard.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btnCard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 767</value>
+    <value>143, 17</value>
   </data>
   <data name="btnCard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 193</value>
+    <value>132, 206</value>
   </data>
   <data name="btnCard.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -835,43 +835,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btnCard.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl2</value>
   </data>
   <data name="&gt;&gt;btnCard.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="btnCashCard.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt</value>
-  </data>
-  <data name="btnCashCard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>287, 767</value>
-  </data>
-  <data name="btnCashCard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 193</value>
-  </data>
-  <data name="btnCashCard.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="btnCashCard.Text" xml:space="preserve">
-    <value>Kart/Nakit</value>
-  </data>
-  <data name="&gt;&gt;btnCashCard.Name" xml:space="preserve">
-    <value>btnCashCard</value>
-  </data>
-  <data name="&gt;&gt;btnCashCard.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnCashCard.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnCashCard.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>5</value>
   </data>
   <data name="tbxSum.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="tbxSum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>459, 767</value>
+    <value>437, 52</value>
   </data>
   <data name="tbxSum.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -892,16 +865,16 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbxSum.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl2</value>
   </data>
   <data name="&gt;&gt;tbxSum.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>0</value>
   </data>
   <data name="btn10.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>897, 541</value>
+    <value>9, 76</value>
   </data>
   <data name="btn10.Size" type="System.Drawing.Size, System.Drawing">
     <value>169, 100</value>
@@ -919,16 +892,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btn10.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn10.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>2</value>
   </data>
   <data name="btn50.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn50.Location" type="System.Drawing.Point, System.Drawing">
-    <value>897, 647</value>
+    <value>9, 182</value>
   </data>
   <data name="btn50.Size" type="System.Drawing.Size, System.Drawing">
     <value>169, 100</value>
@@ -946,16 +919,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btn50.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn50.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>3</value>
   </data>
   <data name="btn100.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn100.Location" type="System.Drawing.Point, System.Drawing">
-    <value>897, 753</value>
+    <value>9, 288</value>
   </data>
   <data name="btn100.Size" type="System.Drawing.Size, System.Drawing">
     <value>169, 100</value>
@@ -973,16 +946,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btn100.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn100.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>4</value>
   </data>
   <data name="btn200.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn200.Location" type="System.Drawing.Point, System.Drawing">
-    <value>897, 857</value>
+    <value>9, 392</value>
   </data>
   <data name="btn200.Size" type="System.Drawing.Size, System.Drawing">
     <value>169, 100</value>
@@ -1000,16 +973,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btn200.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn200.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>6</value>
   </data>
   <data name="tbxSaled.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="tbxSaled.Location" type="System.Drawing.Point, System.Drawing">
-    <value>459, 868</value>
+    <value>437, 156</value>
   </data>
   <data name="tbxSaled.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1030,16 +1003,16 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbxSaled.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl2</value>
   </data>
   <data name="&gt;&gt;tbxSaled.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>1</value>
   </data>
   <data name="tbxChange.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="tbxChange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>663, 868</value>
+    <value>641, 156</value>
   </data>
   <data name="tbxChange.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1060,16 +1033,16 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbxChange.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl2</value>
   </data>
   <data name="&gt;&gt;tbxChange.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>2</value>
   </data>
   <data name="labelControl3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="labelControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>494, 838</value>
+    <value>476, 126</value>
   </data>
   <data name="labelControl3.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 24</value>
@@ -1087,16 +1060,16 @@
     <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl3.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl2</value>
   </data>
   <data name="&gt;&gt;labelControl3.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="labelControl4.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="labelControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>688, 838</value>
+    <value>668, 126</value>
   </data>
   <data name="labelControl4.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 24</value>
@@ -1114,10 +1087,10 @@
     <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelControl4.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl2</value>
   </data>
   <data name="&gt;&gt;labelControl4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btnDelete.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt</value>
@@ -1142,7 +1115,7 @@
 </value>
   </data>
   <data name="btnDelete.Location" type="System.Drawing.Point, System.Drawing">
-    <value>459, 78</value>
+    <value>452, 71</value>
   </data>
   <data name="btnDelete.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 59</value>
@@ -1160,16 +1133,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btnDelete.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl3</value>
   </data>
   <data name="&gt;&gt;btnDelete.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="simpleButton1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="simpleButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1414, 541</value>
+    <value>526, 76</value>
   </data>
   <data name="simpleButton1.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 100</value>
@@ -1187,16 +1160,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;simpleButton1.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;simpleButton1.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>14</value>
   </data>
   <data name="simpleButton2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="simpleButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1414, 753</value>
+    <value>526, 288</value>
   </data>
   <data name="simpleButton2.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 100</value>
@@ -1214,16 +1187,16 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;simpleButton2.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;simpleButton2.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>22</value>
   </data>
   <data name="btnClearAll.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btnClearAll.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1613, 859</value>
+    <value>725, 394</value>
   </data>
   <data name="btnClearAll.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 100</value>
@@ -1241,10 +1214,10 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btnClearAll.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btnClearAll.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>16</value>
   </data>
   <data name="btnBack.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt</value>
@@ -1268,7 +1241,7 @@
 </value>
   </data>
   <data name="btnBack.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+    <value>5, 5</value>
   </data>
   <data name="btnBack.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 54</value>
@@ -1286,36 +1259,138 @@
     <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btnBack.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupControl3</value>
   </data>
   <data name="&gt;&gt;btnBack.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
-  <data name="btnSale.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt</value>
+  <data name="groupControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>823, 460</value>
   </data>
-  <data name="btnSale.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1613, 753</value>
+  <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1021, 505</value>
   </data>
-  <data name="btnSale.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 100</value>
-  </data>
-  <data name="btnSale.TabIndex" type="System.Int32, mscorlib">
+  <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
-  <data name="btnSale.Text" xml:space="preserve">
-    <value>Satış</value>
+  <data name="groupControl1.Text" xml:space="preserve">
+    <value>groupControl1</value>
   </data>
-  <data name="&gt;&gt;btnSale.Name" xml:space="preserve">
-    <value>btnSale</value>
+  <data name="&gt;&gt;groupControl1.Name" xml:space="preserve">
+    <value>groupControl1</value>
   </data>
-  <data name="&gt;&gt;btnSale.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;groupControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;btnSale.Parent" xml:space="preserve">
+  <data name="&gt;&gt;groupControl1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnSale.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;groupControl1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupControl2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSum.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="lblSum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>579, 17</value>
+  </data>
+  <data name="lblSum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
+  </data>
+  <data name="lblSum.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="lblSum.Text" xml:space="preserve">
+    <value>Toplam</value>
+  </data>
+  <data name="&gt;&gt;lblSum.Name" xml:space="preserve">
+    <value>lblSum</value>
+  </data>
+  <data name="&gt;&gt;lblSum.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lblSum.Parent" xml:space="preserve">
+    <value>groupControl2</value>
+  </data>
+  <data name="&gt;&gt;lblSum.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="groupControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 712</value>
+  </data>
+  <data name="groupControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>794, 253</value>
+  </data>
+  <data name="groupControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="groupControl2.Text" xml:space="preserve">
+    <value>groupControl2</value>
+  </data>
+  <data name="&gt;&gt;groupControl2.Name" xml:space="preserve">
+    <value>groupControl2</value>
+  </data>
+  <data name="&gt;&gt;groupControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupControl2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupControl2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="groupControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>794, 223</value>
+  </data>
+  <data name="groupControl3.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="groupControl3.Text" xml:space="preserve">
+    <value>groupControl3</value>
+  </data>
+  <data name="&gt;&gt;groupControl3.Name" xml:space="preserve">
+    <value>groupControl3</value>
+  </data>
+  <data name="&gt;&gt;groupControl3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupControl3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupControl3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="colorDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="groupControl4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>823, 12</value>
+  </data>
+  <data name="groupControl4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1021, 429</value>
+  </data>
+  <data name="groupControl4.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupControl4.Text" xml:space="preserve">
+    <value>groupControl4</value>
+  </data>
+  <data name="&gt;&gt;groupControl4.Name" xml:space="preserve">
+    <value>groupControl4</value>
+  </data>
+  <data name="&gt;&gt;groupControl4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupControl4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupControl4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -1335,6 +1410,12 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Satış İşlemleri</value>
+  </data>
+  <data name="&gt;&gt;colorDialog1.Name" xml:space="preserve">
+    <value>colorDialog1</value>
+  </data>
+  <data name="&gt;&gt;colorDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColorDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>SaleForm</value>

@@ -56,7 +56,6 @@
             this.btnAmount = new DevExpress.XtraEditors.SimpleButton();
             this.btnCash = new DevExpress.XtraEditors.SimpleButton();
             this.btnCard = new DevExpress.XtraEditors.SimpleButton();
-            this.btnCashCard = new DevExpress.XtraEditors.SimpleButton();
             this.tbxSum = new System.Windows.Forms.TextBox();
             this.btn10 = new DevExpress.XtraEditors.SimpleButton();
             this.btn50 = new DevExpress.XtraEditors.SimpleButton();
@@ -71,8 +70,21 @@
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.btnClearAll = new DevExpress.XtraEditors.SimpleButton();
             this.btnBack = new DevExpress.XtraEditors.SimpleButton();
-            this.btnSale = new DevExpress.XtraEditors.SimpleButton();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.lblSum = new DevExpress.XtraEditors.LabelControl();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)(this.dqw)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
+            this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
+            this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
+            this.groupControl4.SuspendLayout();
             this.SuspendLayout();
             // 
             // flp
@@ -269,7 +281,7 @@
             this.btnCash.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btnCash, "btnCash");
             this.btnCash.Name = "btnCash";
-            this.btnCash.Click += new System.EventHandler(this.btn1_Click);
+            this.btnCash.Click += new System.EventHandler(this.btnCash_Click);
             // 
             // btnCard
             // 
@@ -279,17 +291,7 @@
             this.btnCard.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btnCard, "btnCard");
             this.btnCard.Name = "btnCard";
-            this.btnCard.Click += new System.EventHandler(this.btn1_Click);
-            // 
-            // btnCashCard
-            // 
-            this.btnCashCard.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnCashCard.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnCashCard.Appearance.Font")));
-            this.btnCashCard.Appearance.Options.UseBackColor = true;
-            this.btnCashCard.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btnCashCard, "btnCashCard");
-            this.btnCashCard.Name = "btnCashCard";
-            this.btnCashCard.Click += new System.EventHandler(this.btn1_Click);
+            this.btnCard.Click += new System.EventHandler(this.btnCard_Click);
             // 
             // tbxSum
             // 
@@ -406,70 +408,110 @@
             this.btnBack.Name = "btnBack";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // btnSale
+            // groupControl1
             // 
-            this.btnSale.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnSale.Appearance.Font")));
-            this.btnSale.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btnSale, "btnSale");
-            this.btnSale.Name = "btnSale";
-            this.btnSale.Click += new System.EventHandler(this.btnSale_Click);
+            this.groupControl1.Controls.Add(this.tbxMoney);
+            this.groupControl1.Controls.Add(this.btn1);
+            this.groupControl1.Controls.Add(this.btn10);
+            this.groupControl1.Controls.Add(this.btn50);
+            this.groupControl1.Controls.Add(this.btn100);
+            this.groupControl1.Controls.Add(this.btnComma);
+            this.groupControl1.Controls.Add(this.btn200);
+            this.groupControl1.Controls.Add(this.btn9);
+            this.groupControl1.Controls.Add(this.btn2);
+            this.groupControl1.Controls.Add(this.btn0);
+            this.groupControl1.Controls.Add(this.btn3);
+            this.groupControl1.Controls.Add(this.btnClear);
+            this.groupControl1.Controls.Add(this.btnOtherProduct);
+            this.groupControl1.Controls.Add(this.btn8);
+            this.groupControl1.Controls.Add(this.simpleButton1);
+            this.groupControl1.Controls.Add(this.btn7);
+            this.groupControl1.Controls.Add(this.btnClearAll);
+            this.groupControl1.Controls.Add(this.btn6);
+            this.groupControl1.Controls.Add(this.btnBarcode);
+            this.groupControl1.Controls.Add(this.btn5);
+            this.groupControl1.Controls.Add(this.btnSaled);
+            this.groupControl1.Controls.Add(this.btn4);
+            this.groupControl1.Controls.Add(this.simpleButton2);
+            this.groupControl1.Controls.Add(this.btnAmount);
+            resources.ApplyResources(this.groupControl1, "groupControl1");
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.ShowCaption = false;
+            // 
+            // groupControl2
+            // 
+            resources.ApplyResources(this.groupControl2, "groupControl2");
+            this.groupControl2.Controls.Add(this.tbxSum);
+            this.groupControl2.Controls.Add(this.tbxSaled);
+            this.groupControl2.Controls.Add(this.tbxChange);
+            this.groupControl2.Controls.Add(this.btnCash);
+            this.groupControl2.Controls.Add(this.labelControl4);
+            this.groupControl2.Controls.Add(this.btnCard);
+            this.groupControl2.Controls.Add(this.lblSum);
+            this.groupControl2.Controls.Add(this.labelControl3);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.ShowCaption = false;
+            // 
+            // lblSum
+            // 
+            this.lblSum.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lblSum.Appearance.Font")));
+            this.lblSum.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.lblSum, "lblSum");
+            this.lblSum.Name = "lblSum";
+            // 
+            // groupControl3
+            // 
+            this.groupControl3.Controls.Add(this.btnBack);
+            this.groupControl3.Controls.Add(this.tbxAmount);
+            this.groupControl3.Controls.Add(this.tbxBarcode);
+            this.groupControl3.Controls.Add(this.labelControl1);
+            this.groupControl3.Controls.Add(this.btnDelete);
+            this.groupControl3.Controls.Add(this.labelControl2);
+            this.groupControl3.Controls.Add(this.cmbKamera);
+            this.groupControl3.Controls.Add(this.btnAdd);
+            resources.ApplyResources(this.groupControl3, "groupControl3");
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.ShowCaption = false;
+            // 
+            // colorDialog1
+            // 
+            this.colorDialog1.Color = System.Drawing.Color.Maroon;
+            // 
+            // groupControl4
+            // 
+            this.groupControl4.Controls.Add(this.flp);
+            resources.ApplyResources(this.groupControl4, "groupControl4");
+            this.groupControl4.Name = "groupControl4";
+            this.groupControl4.ShowCaption = false;
             // 
             // SaleForm
             // 
             this.AcceptButton = this.btnAdd;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnSale);
-            this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.labelControl4);
-            this.Controls.Add(this.labelControl3);
-            this.Controls.Add(this.btnComma);
-            this.Controls.Add(this.btn9);
-            this.Controls.Add(this.btn0);
-            this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.btn8);
-            this.Controls.Add(this.btn7);
-            this.Controls.Add(this.btn6);
-            this.Controls.Add(this.btn5);
-            this.Controls.Add(this.btn4);
-            this.Controls.Add(this.btnAmount);
-            this.Controls.Add(this.simpleButton2);
-            this.Controls.Add(this.btnSaled);
-            this.Controls.Add(this.btnBarcode);
-            this.Controls.Add(this.btnClearAll);
-            this.Controls.Add(this.simpleButton1);
-            this.Controls.Add(this.btnOtherProduct);
-            this.Controls.Add(this.btn3);
-            this.Controls.Add(this.btn2);
-            this.Controls.Add(this.btnCashCard);
-            this.Controls.Add(this.btnCard);
-            this.Controls.Add(this.btnCash);
-            this.Controls.Add(this.btn200);
-            this.Controls.Add(this.btn100);
-            this.Controls.Add(this.btn50);
-            this.Controls.Add(this.btn10);
-            this.Controls.Add(this.btn1);
-            this.Controls.Add(this.tbxChange);
-            this.Controls.Add(this.tbxSaled);
-            this.Controls.Add(this.tbxSum);
-            this.Controls.Add(this.tbxMoney);
-            this.Controls.Add(this.cmbKamera);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.labelControl2);
-            this.Controls.Add(this.labelControl1);
-            this.Controls.Add(this.tbxBarcode);
-            this.Controls.Add(this.tbxAmount);
+            this.Controls.Add(this.groupControl4);
+            this.Controls.Add(this.groupControl3);
+            this.Controls.Add(this.groupControl2);
+            this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.dqw);
-            this.Controls.Add(this.flp);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "SaleForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SaleForm_FormClosing);
             this.Load += new System.EventHandler(this.SaleForm_Load);
-//            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SaleForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dqw)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
+            this.groupControl2.ResumeLayout(false);
+            this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
+            this.groupControl3.ResumeLayout(false);
+            this.groupControl3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
+            this.groupControl4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -504,7 +546,6 @@
         private DevExpress.XtraEditors.SimpleButton btnAmount;
         private DevExpress.XtraEditors.SimpleButton btnCash;
         private DevExpress.XtraEditors.SimpleButton btnCard;
-        private DevExpress.XtraEditors.SimpleButton btnCashCard;
         private System.Windows.Forms.TextBox tbxSum;
         private DevExpress.XtraEditors.SimpleButton btn10;
         private DevExpress.XtraEditors.SimpleButton btn50;
@@ -519,6 +560,11 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.SimpleButton btnClearAll;
         private DevExpress.XtraEditors.SimpleButton btnBack;
-        private DevExpress.XtraEditors.SimpleButton btnSale;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private DevExpress.XtraEditors.GroupControl groupControl2;
+        private DevExpress.XtraEditors.LabelControl lblSum;
+        private DevExpress.XtraEditors.GroupControl groupControl3;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private DevExpress.XtraEditors.GroupControl groupControl4;
     }
 }

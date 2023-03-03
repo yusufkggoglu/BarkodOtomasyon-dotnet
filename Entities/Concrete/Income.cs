@@ -14,5 +14,6 @@ namespace Entities.Concrete
         public int Amount { get; set; }
         public decimal UnitPrice { get; set; }
         public DateTime Date { get; set; }
+        public string PaymentMethod { get; set; }
     }
 }

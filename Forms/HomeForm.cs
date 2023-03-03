@@ -1,4 +1,7 @@
-﻿using Entities.Concrete;
+﻿using Business.Abstract;
+using Business.Concrete;
+using DataAccess.Concrete.EntityFramework;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,11 +19,13 @@ namespace Forms
         public HomeForm()
         {
             InitializeComponent();
+            _userService = new UserManager(new EfUserDal());
         }
+        IUserService _userService;
         public User user;
         private void HomeForm_Load(object sender, EventArgs e)
         {
-
+            lblUserName.Text = "Kullanıcı : " + user.Name;
         }
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
@@ -30,6 +35,7 @@ namespace Forms
             };
             frm.Show();
             this.Hide();
+            this.Dispose();
         }
 
         private void btnSale_Click(object sender, EventArgs e)
@@ -40,6 +46,7 @@ namespace Forms
             };
             frm.Show();
             this.Hide();
+            this.Dispose();
         }
 
         private void btnStock_Click(object sender, EventArgs e)
@@ -50,6 +57,13 @@ namespace Forms
             };
             frm.Show();
             this.Hide();
+            this.Dispose();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.Dispose();
         }
     }
 }

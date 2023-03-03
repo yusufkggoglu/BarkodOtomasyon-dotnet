@@ -76,8 +76,7 @@ namespace Forms
                 tbxBarcode.Invoke(new MethodInvoker(delegate ()
                 {
                     tbxBarcode.Text = sonuc.ToString();
-                }
-                ));
+                }));
             }
         }
 
@@ -107,10 +106,10 @@ namespace Forms
             {
                 DevExpress.XtraEditors.SimpleButton btn = new DevExpress.XtraEditors.SimpleButton();
                 btn.Text = model[i].Name+Environment.NewLine+model[i].SalePrice;
-                btn.Font = new Font("Microsoft Sans Serif", 15);
+                btn.Font = new Font("Microsoft Sans Serif", 10);
                 btn.Name = model[i].Name.ToString();
-                btn.Height = 125;
-                btn.Width = 125;
+                btn.Height = 75;
+                btn.Width = 100;
                 btn.AccessibleDescription = model[i].SalePrice.ToString();
                 btn.Appearance.BackColor = Color.White;
                 flp.Controls.Add(btn);
@@ -165,9 +164,13 @@ namespace Forms
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            HomeForm frm = new HomeForm();
+            HomeForm frm = new HomeForm()
+            {
+                user = user
+            };
             frm.Show();
             this.Hide();
+            this.Dispose();
         }
 
         private void btn2_Click(object sender, EventArgs e)
@@ -352,7 +355,7 @@ namespace Forms
             tbxSum.Text = "0";
         }
 
-        private void btnSale_Click(object sender, EventArgs e)
+        private void btnCash_Click(object sender, EventArgs e)
         {
             Product p;
             decimal sum = 0;
@@ -379,6 +382,39 @@ namespace Forms
                 Date = DateTime.Now,
                 Amount = 1,
                 UnitPrice = sum,
+                PaymentMethod = "Nakit"
+            });
+            DevExpress.XtraEditors.XtraMessageBox.Show("Satış Yapıldı !");
+        }
+
+        private void btnCard_Click(object sender, EventArgs e)
+        {
+            Product p;
+            decimal sum = 0;
+            for (int i = 0; i < dqw.Rows.Count - 1; i++)
+            {
+                p = _productService.GetByName(dqw.Rows[i].Cells[0].Value.ToString());
+                int amount = p.StockAmount - Convert.ToInt32(dqw.Rows[i].Cells[1].Value);
+                sum += Convert.ToDecimal(dqw.Rows[i].Cells[2].Value);
+                _productService.Update(new Product()
+                {
+                    ID = p.ID,
+                    Name = p.Name,
+                    Discount = p.Discount,
+                    PurchasePrice = p.PurchasePrice,
+                    SalePrice = p.SalePrice,
+                    Barcode = p.Barcode,
+                    StockAmount = amount,
+                });
+            }
+            ClearAll();
+            _ıncomeService.Add(new Income()
+            {
+                Name = "Satış",
+                Date = DateTime.Now,
+                Amount = 1,
+                UnitPrice = sum,
+                PaymentMethod="Kredi Kartı" 
             });
             DevExpress.XtraEditors.XtraMessageBox.Show("Satış Yapıldı !");
         }
