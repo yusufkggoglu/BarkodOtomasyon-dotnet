@@ -65,5 +65,16 @@ namespace Forms
             this.Close();
             this.Dispose();
         }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            ReportForm frm = new ReportForm()
+            {
+                user = user
+            };
+            frm.Show();
+            this.Hide();
+            this.Dispose();
+        }
     }
 }

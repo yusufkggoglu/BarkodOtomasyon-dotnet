@@ -72,6 +72,7 @@
             // 
             // groupControl1
             // 
+            resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.btnUpdate);
             this.groupControl1.Controls.Add(this.textBox1);
@@ -92,7 +93,6 @@
             this.groupControl1.Controls.Add(this.lblPurchasePrice);
             this.groupControl1.Controls.Add(this.lblProductName);
             this.groupControl1.Controls.Add(this.lblBarcode);
-            resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.ShowCaption = false;
             // 

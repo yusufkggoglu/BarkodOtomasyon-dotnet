@@ -135,6 +135,7 @@
             this.cmbKamera.FormattingEnabled = true;
             resources.ApplyResources(this.cmbKamera, "cmbKamera");
             this.cmbKamera.Name = "cmbKamera";
+            this.cmbKamera.SelectedIndexChanged += new System.EventHandler(this.cmbKamera_SelectedIndexChanged);
             // 
             // tbxMoney
             // 
@@ -410,6 +411,7 @@
             // 
             // groupControl1
             // 
+            resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Controls.Add(this.tbxMoney);
             this.groupControl1.Controls.Add(this.btn1);
             this.groupControl1.Controls.Add(this.btn10);
@@ -434,7 +436,6 @@
             this.groupControl1.Controls.Add(this.btn4);
             this.groupControl1.Controls.Add(this.simpleButton2);
             this.groupControl1.Controls.Add(this.btnAmount);
-            resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.ShowCaption = false;
             // 
@@ -479,8 +480,8 @@
             // 
             // groupControl4
             // 
-            this.groupControl4.Controls.Add(this.flp);
             resources.ApplyResources(this.groupControl4, "groupControl4");
+            this.groupControl4.Controls.Add(this.flp);
             this.groupControl4.Name = "groupControl4";
             this.groupControl4.ShowCaption = false;
             // 

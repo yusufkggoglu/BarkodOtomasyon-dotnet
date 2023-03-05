@@ -70,6 +70,7 @@
             resources.ApplyResources(this.btnReports, "btnReports");
             this.btnReports.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnReports.ImageOptions.SvgImage")));
             this.btnReports.Name = "btnReports";
+            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
             // 
             // btnAddProduct
             // 

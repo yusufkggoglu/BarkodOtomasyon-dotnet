@@ -362,18 +362,21 @@ namespace Forms
             for (int i = 0; i < dqw.Rows.Count - 1; i++)
             {
                 p = _productService.GetByName(dqw.Rows[i].Cells[0].Value.ToString());
-                int amount = p.StockAmount - Convert.ToInt32(dqw.Rows[i].Cells[1].Value);
-                sum += Convert.ToDecimal(dqw.Rows[i].Cells[2].Value);
-                _productService.Update(new Product()
+                if (p != null)
                 {
-                    ID = p.ID,
-                    Name = p.Name,
-                    Discount = p.Discount,
-                    PurchasePrice = p.PurchasePrice,
-                    SalePrice = p.SalePrice,
-                    Barcode = p.Barcode,
-                    StockAmount = amount,
-                });
+                    int amount = p.StockAmount - Convert.ToInt32(dqw.Rows[i].Cells[1].Value);
+                    _productService.Update(new Product()
+                    {
+                        ID = p.ID,
+                        Name = p.Name,
+                        Discount = p.Discount,
+                        PurchasePrice = p.PurchasePrice,
+                        SalePrice = p.SalePrice,
+                        Barcode = p.Barcode,
+                        StockAmount = amount,
+                    });
+                }
+                sum += Convert.ToDecimal(dqw.Rows[i].Cells[2].Value);
             }
             ClearAll();
             _ıncomeService.Add(new Income()
@@ -394,18 +397,21 @@ namespace Forms
             for (int i = 0; i < dqw.Rows.Count - 1; i++)
             {
                 p = _productService.GetByName(dqw.Rows[i].Cells[0].Value.ToString());
-                int amount = p.StockAmount - Convert.ToInt32(dqw.Rows[i].Cells[1].Value);
-                sum += Convert.ToDecimal(dqw.Rows[i].Cells[2].Value);
-                _productService.Update(new Product()
+                if (p != null)
                 {
-                    ID = p.ID,
-                    Name = p.Name,
-                    Discount = p.Discount,
-                    PurchasePrice = p.PurchasePrice,
-                    SalePrice = p.SalePrice,
-                    Barcode = p.Barcode,
-                    StockAmount = amount,
-                });
+                    int amount = p.StockAmount - Convert.ToInt32(dqw.Rows[i].Cells[1].Value);
+                    _productService.Update(new Product()
+                    {
+                        ID = p.ID,
+                        Name = p.Name,
+                        Discount = p.Discount,
+                        PurchasePrice = p.PurchasePrice,
+                        SalePrice = p.SalePrice,
+                        Barcode = p.Barcode,
+                        StockAmount = amount,
+                    });
+                }
+                sum += Convert.ToDecimal(dqw.Rows[i].Cells[2].Value);
             }
             ClearAll();
             _ıncomeService.Add(new Income()
@@ -417,6 +423,12 @@ namespace Forms
                 PaymentMethod="Kredi Kartı" 
             });
             DevExpress.XtraEditors.XtraMessageBox.Show("Satış Yapıldı !");
+        }
+
+        private void cmbKamera_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CameraOff();
+            StartCamera();
         }
     }
 }

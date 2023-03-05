@@ -144,6 +144,9 @@
   <data name="&gt;&gt;dqwProducts.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="groupControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <data name="labelControl1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
   </data>

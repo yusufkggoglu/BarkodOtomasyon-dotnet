@@ -117,12 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="flp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="flp.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 5</value>
   </data>
   <data name="flp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1011, 419</value>
+    <value>1052, 419</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="flp.TabIndex" type="System.Int32, mscorlib">
@@ -179,7 +183,6 @@
   <data name="tbxAmount.Text" xml:space="preserve">
     <value>1</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tbxAmount.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
@@ -325,7 +328,7 @@
     <value>Tahoma, 19.8000011pt</value>
   </data>
   <data name="tbxMoney.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 5</value>
+    <value>327, 8</value>
   </data>
   <data name="tbxMoney.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -358,7 +361,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 76</value>
+    <value>327, 79</value>
   </data>
   <data name="btn1.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -385,7 +388,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 76</value>
+    <value>433, 79</value>
   </data>
   <data name="btn2.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -412,7 +415,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>409, 76</value>
+    <value>539, 79</value>
   </data>
   <data name="btn3.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -439,7 +442,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 182</value>
+    <value>327, 185</value>
   </data>
   <data name="btn4.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -466,7 +469,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 182</value>
+    <value>433, 185</value>
   </data>
   <data name="btn5.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -493,7 +496,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>409, 182</value>
+    <value>539, 185</value>
   </data>
   <data name="btn6.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -520,7 +523,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 288</value>
+    <value>327, 291</value>
   </data>
   <data name="btn7.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -547,7 +550,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 288</value>
+    <value>433, 291</value>
   </data>
   <data name="btn8.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -574,7 +577,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>409, 288</value>
+    <value>539, 291</value>
   </data>
   <data name="btn9.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -601,7 +604,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btnClear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 394</value>
+    <value>327, 397</value>
   </data>
   <data name="btnClear.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -628,7 +631,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn0.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 394</value>
+    <value>433, 397</value>
   </data>
   <data name="btn0.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -655,7 +658,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btnComma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>409, 394</value>
+    <value>539, 397</value>
   </data>
   <data name="btnComma.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -682,7 +685,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btnOtherProduct.Location" type="System.Drawing.Point, System.Drawing">
-    <value>526, 76</value>
+    <value>656, 79</value>
   </data>
   <data name="btnOtherProduct.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 100</value>
@@ -709,7 +712,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btnBarcode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>526, 182</value>
+    <value>656, 185</value>
   </data>
   <data name="btnBarcode.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 100</value>
@@ -736,7 +739,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btnSaled.Location" type="System.Drawing.Point, System.Drawing">
-    <value>526, 288</value>
+    <value>656, 291</value>
   </data>
   <data name="btnSaled.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 100</value>
@@ -763,7 +766,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btnAmount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>526, 394</value>
+    <value>656, 397</value>
   </data>
   <data name="btnAmount.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 100</value>
@@ -874,7 +877,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 76</value>
+    <value>139, 79</value>
   </data>
   <data name="btn10.Size" type="System.Drawing.Size, System.Drawing">
     <value>169, 100</value>
@@ -901,7 +904,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn50.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 182</value>
+    <value>139, 185</value>
   </data>
   <data name="btn50.Size" type="System.Drawing.Size, System.Drawing">
     <value>169, 100</value>
@@ -928,7 +931,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn100.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 288</value>
+    <value>139, 291</value>
   </data>
   <data name="btn100.Size" type="System.Drawing.Size, System.Drawing">
     <value>169, 100</value>
@@ -955,7 +958,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btn200.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 392</value>
+    <value>139, 395</value>
   </data>
   <data name="btn200.Size" type="System.Drawing.Size, System.Drawing">
     <value>169, 100</value>
@@ -1142,7 +1145,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="simpleButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>526, 76</value>
+    <value>656, 79</value>
   </data>
   <data name="simpleButton1.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 100</value>
@@ -1169,7 +1172,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="simpleButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>526, 288</value>
+    <value>656, 291</value>
   </data>
   <data name="simpleButton2.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 100</value>
@@ -1196,10 +1199,10 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="btnClearAll.Location" type="System.Drawing.Point, System.Drawing">
-    <value>725, 394</value>
+    <value>656, 5</value>
   </data>
   <data name="btnClearAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 100</value>
+    <value>193, 68</value>
   </data>
   <data name="btnClearAll.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -1264,11 +1267,14 @@
   <data name="&gt;&gt;btnBack.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="groupControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="groupControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>823, 460</value>
   </data>
   <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1021, 505</value>
+    <value>1062, 505</value>
   </data>
   <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -1287,6 +1293,9 @@
   </data>
   <data name="&gt;&gt;groupControl1.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="groupControl2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="groupControl2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1369,11 +1378,14 @@
   <metadata name="colorDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="groupControl4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="groupControl4.Location" type="System.Drawing.Point, System.Drawing">
     <value>823, 12</value>
   </data>
   <data name="groupControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1021, 429</value>
+    <value>1062, 429</value>
   </data>
   <data name="groupControl4.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
