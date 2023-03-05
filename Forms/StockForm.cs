@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Business.Concrete;
+using Business.DependencyResolvers.Ninject;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using System;
@@ -19,7 +20,7 @@ namespace Forms
         public StockForm()
         {
             InitializeComponent();
-            _productService = new ProductManager(new EfProductDal());
+            _productService = InstanceFactory.GetInstance<IProductService>();
         }
         IProductService _productService;
         public User user;

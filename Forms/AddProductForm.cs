@@ -14,6 +14,7 @@ using Business.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using ZXing;
 using AForge.Video.DirectShow;
+using Business.DependencyResolvers.Ninject;
 
 namespace Forms
 {
@@ -22,8 +23,8 @@ namespace Forms
         public AddProductForm()
         {
             InitializeComponent();
-            _productService = new ProductManager(new EfProductDal());
-            _outcomeService = new OutcomeManager(new EfOutcomeDal());
+            _productService = InstanceFactory.GetInstance<IProductService>();
+            _outcomeService = InstanceFactory.GetInstance<IOutcomeService>();
         }
 
         IOutcomeService _outcomeService;

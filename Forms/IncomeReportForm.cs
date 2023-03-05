@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Business.Concrete;
+using Business.DependencyResolvers.Ninject;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using System;
@@ -20,7 +21,7 @@ namespace Forms
         public IncomeReportForm()
         {
             InitializeComponent();
-            _ıncomeService = new IncomeManager(new EfIncomeDal());
+            _ıncomeService = InstanceFactory.GetInstance<IIncomeService>();
         }
 
         IIncomeService _ıncomeService;

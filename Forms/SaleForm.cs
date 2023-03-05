@@ -1,6 +1,7 @@
 ﻿using AForge.Video.DirectShow;
 using Business.Abstract;
 using Business.Concrete;
+using Business.DependencyResolvers.Ninject;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using System;
@@ -21,8 +22,8 @@ namespace Forms
         public SaleForm()
         {
             InitializeComponent();
-            _productService = new ProductManager(new EfProductDal());
-            _ıncomeService = new IncomeManager(new EfIncomeDal());
+            _productService = InstanceFactory.GetInstance<IProductService>();
+            _ıncomeService = InstanceFactory.GetInstance<IIncomeService>();
         }
 
         IProductService _productService;

@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Business.Concrete;
+using Business.DependencyResolvers.Ninject;
 using DataAccess.Concrete.EntityFramework;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace Forms
         public LoginForm()
         {
             InitializeComponent();
-            _userService = new UserManager(new EfUserDal());
+            _userService = InstanceFactory.GetInstance<IUserService>();
         }
         IUserService _userService;
         private void LoginForm_Load(object sender, EventArgs e)

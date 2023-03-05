@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Business.Concrete;
+using Business.DependencyResolvers.Ninject;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using System;
@@ -19,8 +20,8 @@ namespace Forms
         public HomeForm()
         {
             InitializeComponent();
-            _userService = new UserManager(new EfUserDal());
-            _roleService = new RoleManager(new EfRoleDal());
+            _userService = InstanceFactory.GetInstance<IUserService>();
+            _roleService = InstanceFactory.GetInstance<IRoleService>();
         }
         IUserService _userService;
         IRoleService _roleService;

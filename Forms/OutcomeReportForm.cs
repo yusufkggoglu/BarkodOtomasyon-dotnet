@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Business.Concrete;
+using Business.DependencyResolvers.Ninject;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using System;
@@ -20,7 +21,7 @@ namespace Forms
         public OutcomeReportForm()
         {
             InitializeComponent();
-            _outcomeService = new OutcomeManager(new EfOutcomeDal());
+            _outcomeService = InstanceFactory.GetInstance<IOutcomeService>();
         }
 
         IOutcomeService _outcomeService;
