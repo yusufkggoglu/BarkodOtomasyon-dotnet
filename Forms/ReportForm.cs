@@ -1,7 +1,4 @@
-﻿using Business.Abstract;
-using Business.Concrete;
-using DataAccess.Concrete.EntityFramework;
-using Entities.Concrete;
+﻿using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,41 +16,35 @@ namespace Forms
         public ReportForm()
         {
             InitializeComponent();
-            _outcomeService = new OutcomeManager(new EfOutcomeDal());
-            _ıncomeService = new IncomeManager(new EfIncomeDal());
-
         }
+
         public User user;
-        IOutcomeService _outcomeService;
-        IIncomeService _ıncomeService;
 
         private void ReportForm_Load(object sender, EventArgs e)
         {
-            GetIncome();
-            
+
         }
 
-        private void GetOutcome()
+        IncomeReportForm frm1;
+        OutcomeReportForm frm2;
+
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            dqw.DataSource = _outcomeService.GetAll();
+            if (frm1 == null || frm1.IsDisposed)
+                frm1 = new IncomeReportForm();
+            frm1.MdiParent = this;
+            frm1.Show();
         }
 
-        private void GetIncome()
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            dqw.DataSource = _ıncomeService.GetAll();
+            if (frm2 == null || frm2.IsDisposed)
+                frm2 = new OutcomeReportForm();
+            frm2.MdiParent = this;
+            frm2.Show();
         }
 
-        private void btnIncome_Click(object sender, EventArgs e)
-        {
-            GetIncome();
-        }
-
-        private void btnOutcome_Click(object sender, EventArgs e)
-        {
-            GetOutcome();
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             HomeForm frm = new HomeForm()
             {
