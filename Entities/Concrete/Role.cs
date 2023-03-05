@@ -11,6 +11,6 @@ namespace Entities.Concrete
     {
         public int ID { get; set; }
         public string Name { get; set; }
-        public bool AdminStatus { get; set; }
+        public string AdminStatus { get; set; }
     }
 }

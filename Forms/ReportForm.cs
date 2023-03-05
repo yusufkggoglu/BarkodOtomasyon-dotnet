@@ -1,4 +1,7 @@
-﻿using Entities.Concrete;
+﻿using Business.Abstract;
+using Business.Concrete;
+using DataAccess.Concrete.EntityFramework;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,17 +19,37 @@ namespace Forms
         public ReportForm()
         {
             InitializeComponent();
+            _ıncomeService = new IncomeManager(new EfIncomeDal());
+            _outcomeService = new OutcomeManager(new EfOutcomeDal());
         }
 
+        IIncomeService _ıncomeService;
+        IOutcomeService _outcomeService;
         public User user;
+        IncomeReportForm frm1;
+        OutcomeReportForm frm2;
 
         private void ReportForm_Load(object sender, EventArgs e)
         {
-
+            CalculateGain();
         }
 
-        IncomeReportForm frm1;
-        OutcomeReportForm frm2;
+        private void CalculateGain()
+        {
+            decimal income = 0;
+            decimal outcome = 0;
+            var incomelist = _ıncomeService.GetAll();
+            var outcomelist = _outcomeService.GetAll();
+            foreach (var temp in incomelist)
+            {
+                income += Convert.ToDecimal(temp.Amount * temp.UnitPrice);
+            }
+            foreach (var temp in outcomelist)
+            {
+                outcome += Convert.ToDecimal(temp.Amount * temp.UnitPrice);
+            }
+            tbxGain.Text = Convert.ToDecimal(income - outcome).ToString();
+        }
 
         private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -53,6 +76,11 @@ namespace Forms
             frm.Show();
             this.Hide();
             this.Dispose();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            CalculateGain();
         }
     }
 }

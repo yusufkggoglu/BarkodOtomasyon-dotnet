@@ -82,6 +82,14 @@ namespace Forms
                 SalePrice = Convert.ToDecimal(tbxSalePrice.Text),
                 StockAmount = Convert.ToInt32(tbxStockAmount.Text)
             });
+            _outcomeService.Add(new Outcome
+            {
+                Date=DateTime.Now,
+                Amount=Convert.ToInt32(tbxStockAmount.Text),
+                Name= tbxProductName.Text,
+                PaymentMethod=  "Güncellenecek",
+                UnitPrice = Convert.ToDecimal(tbxPurhasePrice.Text)
+            });
             LoadProducts();
             DevExpress.XtraEditors.XtraMessageBox.Show("Ürün Girişi Yapıldı!");
         }
@@ -168,6 +176,15 @@ namespace Forms
                 PurchasePrice = Convert.ToDecimal(tbxPurhasePrice.Text),
                 SalePrice = Convert.ToDecimal(tbxSalePrice.Text),
                 StockAmount = Convert.ToInt32(tbxStockAmount.Text)
+            });
+            //Product p = _productService.Get(Convert.ToInt32(dqwProducts.CurrentRow.Cells[0].Value));
+            _outcomeService.Add(new Outcome()
+            {
+                Date = DateTime.Now,
+                Name = tbxProductName.Text,
+                PaymentMethod = "Güncellenecek",
+                Amount = Convert.ToInt32(tbxStockAmount.Text) - Convert.ToInt32(dqwProducts.CurrentRow.Cells[2].Value),
+                UnitPrice = Convert.ToDecimal(tbxPurhasePrice.Text) 
             });
             LoadProducts();
             DevExpress.XtraEditors.XtraMessageBox.Show("Ürün Güncellendi!");

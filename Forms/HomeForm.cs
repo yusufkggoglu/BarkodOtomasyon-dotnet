@@ -20,13 +20,27 @@ namespace Forms
         {
             InitializeComponent();
             _userService = new UserManager(new EfUserDal());
+            _roleService = new RoleManager(new EfRoleDal());
         }
         IUserService _userService;
+        IRoleService _roleService;
         public User user;
         private void HomeForm_Load(object sender, EventArgs e)
         {
             lblUserName.Text = "Kullanıcı : " + user.Name;
+            Admin();
         }
+
+        private void Admin()
+        {
+            Role r = _roleService.Get(Convert.ToInt32(user.Role));
+            if (Convert.ToInt32(r.AdminStatus) == 0)
+            {
+                btnReports.Enabled = true;
+                btnSettings.Enabled = true;
+            }
+        }
+
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
             AddProductForm frm = new AddProductForm()
@@ -71,6 +85,17 @@ namespace Forms
             ReportForm frm = new ReportForm()
             {
                 user = user
+            };
+            frm.Show();
+            this.Hide();
+            this.Dispose();
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            SettingsForm frm = new SettingsForm()
+            {
+                user = user,
             };
             frm.Show();
             this.Hide();

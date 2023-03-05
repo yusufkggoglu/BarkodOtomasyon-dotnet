@@ -142,5 +142,15 @@ namespace Forms
                 LoadIncome();
             }
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            _ıncomeService.Delete(new Income()
+            {
+                ID = Convert.ToInt32(dqw.CurrentRow.Cells[0].Value),
+            });
+            LoadIncome();
+            DevExpress.XtraEditors.XtraMessageBox.Show("Gelir silindi !");
+        }
     }
 }

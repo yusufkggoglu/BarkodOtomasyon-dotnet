@@ -121,6 +121,7 @@
             resources.ApplyResources(this.btnSettings, "btnSettings");
             this.btnSettings.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSettings.ImageOptions.SvgImage")));
             this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnExit
             // 

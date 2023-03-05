@@ -51,6 +51,7 @@
             this.tbxName = new System.Windows.Forms.TextBox();
             this.lblName = new DevExpress.XtraEditors.LabelControl();
             this.dqw = new System.Windows.Forms.DataGridView();
+            this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dqw)).BeginInit();
@@ -58,6 +59,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.btnDelete);
             this.groupControl1.Controls.Add(this.tbxSum);
             this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Controls.Add(this.btnSave);
@@ -224,6 +226,14 @@
             this.dqw.RowTemplate.Height = 24;
             this.dqw.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dqw_CellClick);
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnDelete.Appearance.Font")));
+            this.btnDelete.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnDelete, "btnDelete");
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // OutcomeReportForm
             // 
             resources.ApplyResources(this, "$this");
@@ -266,5 +276,6 @@
         private System.Windows.Forms.DataGridView dqw;
         private System.Windows.Forms.TextBox tbxSum;
         private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.SimpleButton btnDelete;
     }
 }

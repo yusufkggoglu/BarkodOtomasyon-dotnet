@@ -143,5 +143,15 @@ namespace Forms
             LoadOutcome();
             GetSum();
         }
-    }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            _outcomeService.Delete(new Outcome()
+            {
+                ID = Convert.ToInt32(dqw.CurrentRow.Cells[0].Value),
+            });
+            LoadOutcome();
+            DevExpress.XtraEditors.XtraMessageBox.Show("Gider silindi !");
+        }
+     }
 }

@@ -118,6 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnDelete.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10pt</value>
+  </data>
+  <data name="btnDelete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>537, 192</value>
+  </data>
+  <data name="btnDelete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 60</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnDelete.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="btnDelete.Text" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Name" xml:space="preserve">
+    <value>btnDelete</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="tbxSum.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt</value>
   </data>
@@ -131,7 +159,6 @@
   <data name="tbxSum.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 28</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tbxSum.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
   </data>
@@ -145,7 +172,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;tbxSum.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="labelControl3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
@@ -179,7 +206,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;labelControl3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btnSave.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt</value>
@@ -227,7 +254,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btnClean.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt</value>
@@ -269,7 +296,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btnClean.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="labelControl2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
@@ -302,7 +329,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;labelControl2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="simpleButton1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt</value>
@@ -329,7 +356,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;simpleButton1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="labelControl1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
@@ -362,7 +389,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="btnDateFilter.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt</value>
@@ -389,7 +416,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btnDateFilter.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="dtpFinish.Location" type="System.Drawing.Point, System.Drawing">
     <value>981, 106</value>
@@ -410,7 +437,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;dtpFinish.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="dtpStart.Location" type="System.Drawing.Point, System.Drawing">
     <value>981, 39</value>
@@ -431,16 +458,16 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;dtpStart.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="btnUpdate.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt</value>
   </data>
   <data name="btnUpdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>537, 159</value>
+    <value>537, 119</value>
   </data>
   <data name="btnUpdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 89</value>
+    <value>104, 58</value>
   </data>
   <data name="btnUpdate.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -458,7 +485,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btnUpdate.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="btnAdd.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt</value>
@@ -467,7 +494,7 @@
     <value>537, 34</value>
   </data>
   <data name="btnAdd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 89</value>
+    <value>104, 64</value>
   </data>
   <data name="btnAdd.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -485,7 +512,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btnAdd.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="tbxPaymentMethod.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt</value>
@@ -512,7 +539,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;tbxPaymentMethod.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="lblPaymentMethod.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
@@ -545,7 +572,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;lblPaymentMethod.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="tbxUnitPrice.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt</value>
@@ -572,7 +599,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;tbxUnitPrice.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="lblUnitPrice.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
@@ -605,7 +632,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;lblUnitPrice.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="tbxAmount.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt</value>
@@ -632,7 +659,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;tbxAmount.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="lblAmount.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
@@ -665,7 +692,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;lblAmount.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="tbxName.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt</value>
@@ -692,7 +719,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;tbxName.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="lblName.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt</value>
@@ -725,7 +752,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;lblName.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="groupControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>

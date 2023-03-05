@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IncomeReportForm));
             this.dqw = new System.Windows.Forms.DataGridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.tbxSum = new System.Windows.Forms.TextBox();
+            this.lblSum = new DevExpress.XtraEditors.LabelControl();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.btnClean = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -49,8 +51,7 @@
             this.lblAmount = new DevExpress.XtraEditors.LabelControl();
             this.tbxName = new System.Windows.Forms.TextBox();
             this.lblName = new DevExpress.XtraEditors.LabelControl();
-            this.lblSum = new DevExpress.XtraEditors.LabelControl();
-            this.tbxSum = new System.Windows.Forms.TextBox();
+            this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dqw)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
@@ -69,6 +70,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.btnDelete);
             this.groupControl1.Controls.Add(this.tbxSum);
             this.groupControl1.Controls.Add(this.lblSum);
             this.groupControl1.Controls.Add(this.btnSave);
@@ -96,11 +98,32 @@
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "groupControl1";
             // 
+            // tbxSum
+            // 
+            this.tbxSum.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.tbxSum.Location = new System.Drawing.Point(981, 189);
+            this.tbxSum.Margin = new System.Windows.Forms.Padding(4);
+            this.tbxSum.Name = "tbxSum";
+            this.tbxSum.Size = new System.Drawing.Size(200, 28);
+            this.tbxSum.TabIndex = 29;
+            // 
+            // lblSum
+            // 
+            this.lblSum.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.lblSum.Appearance.Options.UseFont = true;
+            this.lblSum.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblSum.Location = new System.Drawing.Point(846, 187);
+            this.lblSum.Margin = new System.Windows.Forms.Padding(4);
+            this.lblSum.Name = "lblSum";
+            this.lblSum.Size = new System.Drawing.Size(129, 32);
+            this.lblSum.TabIndex = 28;
+            this.lblSum.Text = "Toplam  Gelir";
+            // 
             // btnSave
             // 
             this.btnSave.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.btnSave.Appearance.Options.UseFont = true;
-            this.btnSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
+            this.btnSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSave.ImageOptions.SvgImage")));
             this.btnSave.Location = new System.Drawing.Point(1377, 33);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(167, 89);
@@ -112,7 +135,7 @@
             // 
             this.btnClean.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.btnClean.Appearance.Options.UseFont = true;
-            this.btnClean.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            this.btnClean.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnClean.ImageOptions.SvgImage")));
             this.btnClean.Location = new System.Drawing.Point(1377, 128);
             this.btnClean.Name = "btnClean";
             this.btnClean.Size = new System.Drawing.Size(167, 89);
@@ -183,9 +206,9 @@
             // 
             this.btnUpdate.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.btnUpdate.Appearance.Options.UseFont = true;
-            this.btnUpdate.Location = new System.Drawing.Point(537, 159);
+            this.btnUpdate.Location = new System.Drawing.Point(537, 114);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(104, 89);
+            this.btnUpdate.Size = new System.Drawing.Size(104, 60);
             this.btnUpdate.TabIndex = 20;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -196,7 +219,7 @@
             this.btnAdd.Appearance.Options.UseFont = true;
             this.btnAdd.Location = new System.Drawing.Point(537, 34);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(104, 89);
+            this.btnAdd.Size = new System.Drawing.Size(104, 64);
             this.btnAdd.TabIndex = 19;
             this.btnAdd.Text = "Kaydet";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -285,26 +308,16 @@
             this.lblName.TabIndex = 11;
             this.lblName.Text = "Ürün";
             // 
-            // lblSum
+            // btnDelete
             // 
-            this.lblSum.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.lblSum.Appearance.Options.UseFont = true;
-            this.lblSum.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblSum.Location = new System.Drawing.Point(846, 187);
-            this.lblSum.Margin = new System.Windows.Forms.Padding(4);
-            this.lblSum.Name = "lblSum";
-            this.lblSum.Size = new System.Drawing.Size(129, 32);
-            this.lblSum.TabIndex = 28;
-            this.lblSum.Text = "Toplam  Gelir";
-            // 
-            // tbxSum
-            // 
-            this.tbxSum.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.tbxSum.Location = new System.Drawing.Point(981, 189);
-            this.tbxSum.Margin = new System.Windows.Forms.Padding(4);
-            this.tbxSum.Name = "tbxSum";
-            this.tbxSum.Size = new System.Drawing.Size(200, 28);
-            this.tbxSum.TabIndex = 29;
+            this.btnDelete.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btnDelete.Appearance.Options.UseFont = true;
+            this.btnDelete.Location = new System.Drawing.Point(537, 189);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(104, 60);
+            this.btnDelete.TabIndex = 30;
+            this.btnDelete.Text = "Sil";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // IncomeReportForm
             // 
@@ -350,5 +363,6 @@
         private DevExpress.XtraEditors.SimpleButton btnClean;
         private System.Windows.Forms.TextBox tbxSum;
         private DevExpress.XtraEditors.LabelControl lblSum;
+        private DevExpress.XtraEditors.SimpleButton btnDelete;
     }
 }
