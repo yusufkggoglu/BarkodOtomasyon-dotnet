@@ -16,20 +16,20 @@ using Excel = Microsoft.Office.Interop.Excel;
 
 namespace Forms
 {
-    public partial class OutcomeReportForm : DevExpress.XtraEditors.XtraForm
+    public partial class OutgoingReportForm : DevExpress.XtraEditors.XtraForm
     {
-        public OutcomeReportForm()
+        public OutgoingReportForm()
         {
             InitializeComponent();
-            _outcomeService = InstanceFactory.GetInstance<IOutcomeService>();
+            _outgoingService = InstanceFactory.GetInstance<IOutgoingService>();
         }
 
-        IOutcomeService _outcomeService;
+        IOutgoingService _outgoingService;
         
         private void GetSum()
         {
             decimal sum = 0;
-            var list = _outcomeService.GetAll();
+            var list = _outgoingService.GetAll();
             foreach (var temp in list)
             {
                 sum += Convert.ToDecimal(temp.Amount) * Convert.ToDecimal(temp.UnitPrice);
@@ -37,9 +37,9 @@ namespace Forms
             tbxSum.Text = sum.ToString();
         }
 
-        private void LoadOutcome()
+        private void LoadOutgoing()
         {
-            dqw.DataSource = _outcomeService.GetAll();
+            dqw.DataSource = _outgoingService.GetAll();
         }
 
         private void dqw_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -52,33 +52,47 @@ namespace Forms
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            _outcomeService.Add(new Outcome()
+            try
             {
-                Name = tbxName.Text,
-                Amount = Convert.ToInt32(tbxAmount.Text),
-                Date = DateTime.Now,
-                PaymentMethod = tbxPaymentMethod.Text,
-                UnitPrice = Convert.ToDecimal(tbxUnitPrice.Text)
-            });
-            LoadOutcome();
-            GetSum();
-            DevExpress.XtraEditors.XtraMessageBox.Show("Gider Eklendi !");
+                _outgoingService.Add(new Outgoing()
+                {
+                    Name = tbxName.Text,
+                    Amount = Convert.ToInt32(tbxAmount.Text),
+                    Date = DateTime.Now,
+                    PaymentMethod = tbxPaymentMethod.Text,
+                    UnitPrice = Convert.ToDecimal(tbxUnitPrice.Text)
+                });
+                LoadOutgoing();
+                GetSum();
+                DevExpress.XtraEditors.XtraMessageBox.Show("Gider Eklendi !");
+            }
+            catch (Exception exception)
+            {
+                DevExpress.XtraEditors.XtraMessageBox.Show(exception.Message);
+            }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            _outcomeService.Update(new Outcome()
+            try
             {
-                ID = Convert.ToInt32(dqw.CurrentRow.Cells[0].Value),
-                Name = tbxName.Text,
-                Amount = Convert.ToInt32(tbxAmount.Text),
-                Date = DateTime.Now,
-                PaymentMethod = tbxPaymentMethod.Text,
-                UnitPrice = Convert.ToDecimal(tbxUnitPrice.Text)
-            });
-            LoadOutcome();
-            GetSum();
-            DevExpress.XtraEditors.XtraMessageBox.Show("Gider Güncellendi !");
+                _outgoingService.Update(new Outgoing()
+                {
+                    ID = Convert.ToInt32(dqw.CurrentRow.Cells[0].Value),
+                    Name = tbxName.Text,
+                    Amount = Convert.ToInt32(tbxAmount.Text),
+                    Date = DateTime.Now,
+                    PaymentMethod = tbxPaymentMethod.Text,
+                    UnitPrice = Convert.ToDecimal(tbxUnitPrice.Text)
+                });
+                LoadOutgoing();
+                GetSum();
+                DevExpress.XtraEditors.XtraMessageBox.Show("Gider Güncellendi !");
+            }
+            catch (Exception exception)
+            {
+                DevExpress.XtraEditors.XtraMessageBox.Show(exception.Message);
+            }
         }
 
         //düzenlenecek
@@ -130,28 +144,28 @@ namespace Forms
             DialogResult secenek = DevExpress.XtraEditors.XtraMessageBox.Show("Gider geçmişi silinecek, Emin misiniz ?", "Dikkat", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (secenek == DialogResult.Yes)
             {
-                var list = _outcomeService.GetAll();
+                var list = _outgoingService.GetAll();
                 foreach (var temp in list)
                 {
-                    _outcomeService.Delete(temp);
+                    _outgoingService.Delete(temp);
                 }
-                LoadOutcome();
+                LoadOutgoing();
             }
         }
 
         private void OutcomeReportForm_Load(object sender, EventArgs e)
         {
-            LoadOutcome();
+            LoadOutgoing();
             GetSum();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            _outcomeService.Delete(new Outcome()
+            _outgoingService.Delete(new Outgoing()
             {
                 ID = Convert.ToInt32(dqw.CurrentRow.Cells[0].Value),
             });
-            LoadOutcome();
+            LoadOutgoing();
             DevExpress.XtraEditors.XtraMessageBox.Show("Gider silindi !");
         }
      }

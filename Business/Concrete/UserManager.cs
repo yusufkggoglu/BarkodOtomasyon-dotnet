@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.Utilities;
+using Business.ValidationRules.FluentValidation;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
@@ -19,6 +21,7 @@ namespace Business.Concrete
 
         public void Add(User user)
         {
+            ValidationTool.Validate(new UserValidator(), user);
             _userDal.Add(user);
         }
 
@@ -39,6 +42,7 @@ namespace Business.Concrete
 
         public void Update(User user)
         {
+            ValidationTool.Validate(new UserValidator(), user);
             _userDal.Update(user);
         }
     }

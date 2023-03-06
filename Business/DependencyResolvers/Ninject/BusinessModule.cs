@@ -27,8 +27,8 @@ namespace Business.DependencyResolvers.Ninject
             Bind<IIncomeService>().To<IncomeManager>();
             Bind<IIncomeDal>().To<EfIncomeDal>();
 
-            Bind<IOutcomeService>().To<OutcomeManager>();
-            Bind<IOutcomeDal>().To<EfOutcomeDal>();
+            Bind<IOutgoingService>().To<OutgoingManager>();
+            Bind<IOutgoingDal>().To<EfOutgoingDal>();
         }
     }
 }

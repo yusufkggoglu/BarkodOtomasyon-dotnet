@@ -58,33 +58,47 @@ namespace Forms
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            _ıncomeService.Add(new Income()
+            try
             {
-                Name = tbxName.Text,
-                Amount = Convert.ToInt32(tbxAmount.Text),
-                Date= DateTime.Now,
-                PaymentMethod = tbxPaymentMethod.Text,
-                UnitPrice=Convert.ToDecimal(tbxUnitPrice.Text)
-            });
-            LoadIncome();
-            GetSum();
-            DevExpress.XtraEditors.XtraMessageBox.Show("Gelir Eklendi !");
+                _ıncomeService.Add(new Income()
+                {
+                    Name = tbxName.Text,
+                    Amount = Convert.ToInt32(tbxAmount.Text),
+                    Date = DateTime.Now,
+                    PaymentMethod = tbxPaymentMethod.Text,
+                    UnitPrice = Convert.ToDecimal(tbxUnitPrice.Text)
+                });
+                LoadIncome();
+                GetSum();
+                DevExpress.XtraEditors.XtraMessageBox.Show("Gelir Eklendi !");
+            }
+            catch (Exception exception) 
+            {
+                DevExpress.XtraEditors.XtraMessageBox.Show(exception.Message);
+            }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            _ıncomeService.Update(new Income()
+            try
             {
-                ID = Convert.ToInt32(dqw.CurrentRow.Cells[0].Value),
-                Name = tbxName.Text,
-                Amount = Convert.ToInt32(tbxAmount.Text),
-                Date = DateTime.Now,
-                PaymentMethod = tbxPaymentMethod.Text,
-                UnitPrice = Convert.ToDecimal(tbxUnitPrice.Text)
-            });
-            LoadIncome();
-            GetSum();
-            DevExpress.XtraEditors.XtraMessageBox.Show("Gelir Güncellendi !");
+                _ıncomeService.Update(new Income()
+                {
+                    ID = Convert.ToInt32(dqw.CurrentRow.Cells[0].Value),
+                    Name = tbxName.Text,
+                    Amount = Convert.ToInt32(tbxAmount.Text),
+                    Date = DateTime.Now,
+                    PaymentMethod = tbxPaymentMethod.Text,
+                    UnitPrice = Convert.ToDecimal(tbxUnitPrice.Text)
+                });
+                LoadIncome();
+                GetSum();
+                DevExpress.XtraEditors.XtraMessageBox.Show("Gelir Güncellendi !");
+            }
+            catch (Exception exception)
+            {
+                DevExpress.XtraEditors.XtraMessageBox.Show(exception.Message);
+            }
         }
         //düzenlenecek
         private void btnDateFilter_Click(object sender, EventArgs e)

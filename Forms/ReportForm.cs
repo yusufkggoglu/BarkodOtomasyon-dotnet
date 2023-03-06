@@ -21,14 +21,14 @@ namespace Forms
         {
             InitializeComponent();
             _ıncomeService = InstanceFactory.GetInstance<IIncomeService>();
-            _outcomeService = InstanceFactory.GetInstance<IOutcomeService>();
+            _outcomeService = InstanceFactory.GetInstance<IOutgoingService>();
         }
 
         IIncomeService _ıncomeService;
-        IOutcomeService _outcomeService;
+        IOutgoingService _outcomeService;
         public User user;
         IncomeReportForm frm1;
-        OutcomeReportForm frm2;
+        OutgoingReportForm frm2;
 
         private void ReportForm_Load(object sender, EventArgs e)
         {
@@ -63,7 +63,7 @@ namespace Forms
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (frm2 == null || frm2.IsDisposed)
-                frm2 = new OutcomeReportForm();
+                frm2 = new OutgoingReportForm();
             frm2.MdiParent = this;
             frm2.Show();
         }

@@ -85,6 +85,7 @@ namespace Forms
             });
             LoadRole();
             GetRoles();
+            DevExpress.XtraEditors.XtraMessageBox.Show("Rol eklendi !");
         }
 
         private void btnRoleUpdate_Click(object sender, EventArgs e)
@@ -97,6 +98,7 @@ namespace Forms
             });
             LoadRole();
             GetRoles();
+            DevExpress.XtraEditors.XtraMessageBox.Show("Rol güncellendi !");
         }
 
         private void btnRoleDelete_Click(object sender, EventArgs e)
@@ -107,6 +109,7 @@ namespace Forms
             });
             LoadRole();
             GetRoles();
+            DevExpress.XtraEditors.XtraMessageBox.Show("Rol silindi !");
         }
 
         private void btnUserAdd_Click(object sender, EventArgs e)
@@ -118,6 +121,7 @@ namespace Forms
                 Role = Convert.ToInt32(cmbRole.SelectedValue)
             });
             LoadUser();
+            DevExpress.XtraEditors.XtraMessageBox.Show("Kullanıcı eklendi !");
         }
 
         private void btnUserUpdate_Click(object sender, EventArgs e)
@@ -130,6 +134,7 @@ namespace Forms
                 Role = Convert.ToInt32(cmbRole.SelectedValue)
             });
             LoadUser();
+            DevExpress.XtraEditors.XtraMessageBox.Show("Kullanıcı güncellendi !");
         }
 
         private void btnUserDelete_Click(object sender, EventArgs e)
@@ -139,6 +144,7 @@ namespace Forms
                 ID = Convert.ToInt32(dqwUsers.CurrentRow.Cells[0].Value)
             });
             LoadUser();
+            DevExpress.XtraEditors.XtraMessageBox.Show("Kullanıcı silindi !");
         }
     }
 }

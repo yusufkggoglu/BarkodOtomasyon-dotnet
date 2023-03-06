@@ -53,7 +53,7 @@
   <ItemGroup>
     <Compile Include="Abstract\IEntity.cs" />
     <Compile Include="Concrete\Income.cs" />
-    <Compile Include="Concrete\Outcome.cs" />
+    <Compile Include="Concrete\Outgoing.cs" />
     <Compile Include="Concrete\Product.cs" />
     <Compile Include="Concrete\Role.cs" />
     <Compile Include="Concrete\User.cs" />

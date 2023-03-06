@@ -184,24 +184,6 @@
   <data name="ribbonControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="Raporlar.Text" xml:space="preserve">
-    <value>Raporlarım</value>
-  </data>
-  <data name="ribbonControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1910, 179</value>
-  </data>
-  <data name="&gt;&gt;ribbonControl1.Name" xml:space="preserve">
-    <value>ribbonControl1</value>
-  </data>
-  <data name="&gt;&gt;ribbonControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ribbonControl1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="ribbonPageGroup3.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjEsIFZlcnNpb249MjAuMS43
@@ -219,6 +201,24 @@
         dGggZD0iTTE0LDEyVjkuNlY2TDQsMTZsMTAsMTB2LTZjNy43LDAsMTQsMi43LDE0LDZDMjgsMTguMywy
         MS43LDEyLDE0LDEyeiIgY2xhc3M9IkJsdWUiIC8+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
+  </data>
+  <data name="Raporlar.Text" xml:space="preserve">
+    <value>Raporlarım</value>
+  </data>
+  <data name="ribbonControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1910, 173</value>
+  </data>
+  <data name="&gt;&gt;ribbonControl1.Name" xml:space="preserve">
+    <value>ribbonControl1</value>
+  </data>
+  <data name="&gt;&gt;ribbonControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ribbonControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ribbonControl1.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <metadata name="xtraTabbedMdiManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -258,7 +258,7 @@
 </value>
   </data>
   <data name="btnRefresh.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1426, 99</value>
+    <value>1677, 101</value>
   </data>
   <data name="btnRefresh.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 61</value>
@@ -285,7 +285,7 @@
     <value>Tahoma, 12pt</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1182, 138</value>
+    <value>1470, 138</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 24</value>
@@ -312,7 +312,7 @@
     <value>False</value>
   </data>
   <data name="tbxGain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1228, 139</value>
+    <value>1516, 139</value>
   </data>
   <data name="tbxGain.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 23</value>

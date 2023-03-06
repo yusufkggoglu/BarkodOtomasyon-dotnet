@@ -43,19 +43,33 @@ namespace Forms
 
         private void StartCamera()
         {
-            kameram = new VideoCaptureDevice(Cihazlar[cmbKamera.SelectedIndex].MonikerString);
-            kameram.NewFrame += VideoCaptureDevice_NewFrame;
-            kameram.Start();
+            try
+            {
+                kameram = new VideoCaptureDevice(Cihazlar[cmbKamera.SelectedIndex].MonikerString);
+                kameram.NewFrame += VideoCaptureDevice_NewFrame;
+                kameram.Start();
+            }
+            catch (Exception exception)
+            {
+                DevExpress.XtraEditors.XtraMessageBox.Show(exception.Message);
+            }
         }
 
         private void GetCamera()
         {
-            Cihazlar = new FilterInfoCollection(FilterCategory.VideoInputDevice);
-            foreach (FilterInfo cihaz in Cihazlar)
+            try
             {
-                cmbKamera.Items.Add(cihaz.Name);
+                Cihazlar = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+                foreach (FilterInfo cihaz in Cihazlar)
+                {
+                    cmbKamera.Items.Add(cihaz.Name);
+                }
+                cmbKamera.SelectedIndex = 0;
             }
-            cmbKamera.SelectedIndex = 0;
+            catch (Exception exception)
+            {
+                DevExpress.XtraEditors.XtraMessageBox.Show(exception.Message);
+            }
         }
 
         private void CreateDataGridView()
@@ -68,16 +82,23 @@ namespace Forms
         
         private void VideoCaptureDevice_NewFrame(object sender, AForge.Video.NewFrameEventArgs eventArgs)
         {
-            Bitmap GoruntulenenBarkod = (Bitmap)eventArgs.Frame.Clone();
-            BarcodeReader okuyucu = new BarcodeReader();
-            var sonuc = okuyucu.Decode(GoruntulenenBarkod);
-
-            if (sonuc != null)
+            try
             {
-                tbxBarcode.Invoke(new MethodInvoker(delegate ()
+                Bitmap GoruntulenenBarkod = (Bitmap)eventArgs.Frame.Clone();
+                BarcodeReader okuyucu = new BarcodeReader();
+                var sonuc = okuyucu.Decode(GoruntulenenBarkod);
+
+                if (sonuc != null)
                 {
-                    tbxBarcode.Text = sonuc.ToString();
-                }));
+                    tbxBarcode.Invoke(new MethodInvoker(delegate ()
+                    {
+                        tbxBarcode.Text = sonuc.ToString();
+                    }));
+                }
+            }
+            catch (Exception exception)
+            {
+                DevExpress.XtraEditors.XtraMessageBox.Show(exception.Message);
             }
         }
 
@@ -140,12 +161,19 @@ namespace Forms
 
         private void CameraOff()
         {
-            if (kameram != null)
+            try
             {
-                if (kameram.IsRunning)
+                if (kameram != null)
                 {
-                    kameram.Stop();
-                }
+                    if (kameram.IsRunning)
+                    {
+                        kameram.Stop();
+                    }
+                }   
+            }
+            catch (Exception exception)
+            {
+                DevExpress.XtraEditors.XtraMessageBox.Show(exception.Message);
             }
         }
 
@@ -358,72 +386,86 @@ namespace Forms
 
         private void btnCash_Click(object sender, EventArgs e)
         {
-            Product p;
-            decimal sum = 0;
-            for (int i = 0; i < dqw.Rows.Count - 1; i++)
+            try
             {
-                p = _productService.GetByName(dqw.Rows[i].Cells[0].Value.ToString());
-                if (p != null)
+                Product p;
+                decimal sum = 0;
+                for (int i = 0; i < dqw.Rows.Count - 1; i++)
                 {
-                    int amount = p.StockAmount - Convert.ToInt32(dqw.Rows[i].Cells[1].Value);
-                    _productService.Update(new Product()
+                    p = _productService.GetByName(dqw.Rows[i].Cells[0].Value.ToString());
+                    if (p != null)
                     {
-                        ID = p.ID,
-                        Name = p.Name,
-                        Discount = p.Discount,
-                        PurchasePrice = p.PurchasePrice,
-                        SalePrice = p.SalePrice,
-                        Barcode = p.Barcode,
-                        StockAmount = amount,
-                    });
+                        int amount = p.StockAmount - Convert.ToInt32(dqw.Rows[i].Cells[1].Value);
+                        _productService.Update(new Product()
+                        {
+                            ID = p.ID,
+                            Name = p.Name,
+                            Discount = p.Discount,
+                            PurchasePrice = p.PurchasePrice,
+                            SalePrice = p.SalePrice,
+                            Barcode = p.Barcode,
+                            StockAmount = amount,
+                        });
+                    }
+                    sum += Convert.ToDecimal(dqw.Rows[i].Cells[2].Value);
                 }
-                sum += Convert.ToDecimal(dqw.Rows[i].Cells[2].Value);
+                ClearAll();
+                _ıncomeService.Add(new Income()
+                {
+                    Name = "Satış",
+                    Date = DateTime.Now,
+                    Amount = 1,
+                    UnitPrice = sum,
+                    PaymentMethod = "Nakit"
+                });
+                DevExpress.XtraEditors.XtraMessageBox.Show("Satış Yapıldı !");
             }
-            ClearAll();
-            _ıncomeService.Add(new Income()
+            catch (Exception exception)
             {
-                Name = "Satış",
-                Date = DateTime.Now,
-                Amount = 1,
-                UnitPrice = sum,
-                PaymentMethod = "Nakit"
-            });
-            DevExpress.XtraEditors.XtraMessageBox.Show("Satış Yapıldı !");
+                DevExpress.XtraEditors.XtraMessageBox.Show(exception.Message);
+            }
         }
 
         private void btnCard_Click(object sender, EventArgs e)
         {
-            Product p;
-            decimal sum = 0;
-            for (int i = 0; i < dqw.Rows.Count - 1; i++)
+            try
             {
-                p = _productService.GetByName(dqw.Rows[i].Cells[0].Value.ToString());
-                if (p != null)
+                Product p;
+                decimal sum = 0;
+                for (int i = 0; i < dqw.Rows.Count - 1; i++)
                 {
-                    int amount = p.StockAmount - Convert.ToInt32(dqw.Rows[i].Cells[1].Value);
-                    _productService.Update(new Product()
+                    p = _productService.GetByName(dqw.Rows[i].Cells[0].Value.ToString());
+                    if (p != null)
                     {
-                        ID = p.ID,
-                        Name = p.Name,
-                        Discount = p.Discount,
-                        PurchasePrice = p.PurchasePrice,
-                        SalePrice = p.SalePrice,
-                        Barcode = p.Barcode,
-                        StockAmount = amount,
-                    });
+                        int amount = p.StockAmount - Convert.ToInt32(dqw.Rows[i].Cells[1].Value);
+                        _productService.Update(new Product()
+                        {
+                            ID = p.ID,
+                            Name = p.Name,
+                            Discount = p.Discount,
+                            PurchasePrice = p.PurchasePrice,
+                            SalePrice = p.SalePrice,
+                            Barcode = p.Barcode,
+                            StockAmount = amount,
+                        });
+                    }
+                    sum += Convert.ToDecimal(dqw.Rows[i].Cells[2].Value);
                 }
-                sum += Convert.ToDecimal(dqw.Rows[i].Cells[2].Value);
+                ClearAll();
+                _ıncomeService.Add(new Income()
+                {
+                    Name = "Satış",
+                    Date = DateTime.Now,
+                    Amount = 1,
+                    UnitPrice = sum,
+                    PaymentMethod = "Kredi Kartı"
+                });
+                DevExpress.XtraEditors.XtraMessageBox.Show("Satış Yapıldı !");
             }
-            ClearAll();
-            _ıncomeService.Add(new Income()
+            catch (Exception exception)
             {
-                Name = "Satış",
-                Date = DateTime.Now,
-                Amount = 1,
-                UnitPrice = sum,
-                PaymentMethod="Kredi Kartı" 
-            });
-            DevExpress.XtraEditors.XtraMessageBox.Show("Satış Yapıldı !");
+                DevExpress.XtraEditors.XtraMessageBox.Show(exception.Message);
+            }
         }
 
         private void cmbKamera_SelectedIndexChanged(object sender, EventArgs e)

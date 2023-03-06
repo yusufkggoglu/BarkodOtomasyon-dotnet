@@ -14,6 +14,6 @@ namespace DataAccess.Concrete.EntityFramework
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<Income> Incomes { get; set; }
-        public DbSet<Outcome> Outcomes { get; set; }
+        public DbSet<Outgoing> Outgoings { get; set; }
     }
 }

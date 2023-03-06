@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.Utilities;
+using Business.ValidationRules.FluentValidation;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
@@ -19,6 +21,7 @@ namespace Business.Concrete
 
         public void Add(Income ınCome)
         {
+            ValidationTool.Validate(new IncomeValidator(), ınCome);
             _ıncomeDal.Add(ınCome);
         }
 
@@ -39,6 +42,7 @@ namespace Business.Concrete
 
         public void Update(Income ınCome)
         {
+            ValidationTool.Validate(new IncomeValidator(), ınCome);
             _ıncomeDal.Update(ınCome);
         }
     }

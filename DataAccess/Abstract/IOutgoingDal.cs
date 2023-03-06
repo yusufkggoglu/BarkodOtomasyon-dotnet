@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Abstract
 {
-    public interface IOutcomeDal:IEntityRepository<Outcome>
+    public interface IOutgoingDal:IEntityRepository<Outgoing>
     {
     }
 }

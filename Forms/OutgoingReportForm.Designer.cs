@@ -1,6 +1,6 @@
 ﻿namespace Forms
 {
-    partial class OutcomeReportForm
+    partial class OutgoingReportForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OutcomeReportForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OutgoingReportForm));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.tbxSum = new System.Windows.Forms.TextBox();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();

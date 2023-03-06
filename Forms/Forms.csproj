@@ -123,11 +123,11 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="OutcomeReportForm.cs">
+    <Compile Include="OutgoingReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OutcomeReportForm.Designer.cs">
-      <DependentUpon>OutcomeReportForm.cs</DependentUpon>
+    <Compile Include="OutgoingReportForm.Designer.cs">
+      <DependentUpon>OutgoingReportForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -167,8 +167,8 @@
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OutcomeReportForm.resx">
-      <DependentUpon>OutcomeReportForm.cs</DependentUpon>
+    <EmbeddedResource Include="OutgoingReportForm.resx">
+      <DependentUpon>OutgoingReportForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

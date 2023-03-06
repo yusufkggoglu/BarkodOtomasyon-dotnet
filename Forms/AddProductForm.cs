@@ -24,10 +24,10 @@ namespace Forms
         {
             InitializeComponent();
             _productService = InstanceFactory.GetInstance<IProductService>();
-            _outcomeService = InstanceFactory.GetInstance<IOutcomeService>();
+            _outcomeService = InstanceFactory.GetInstance<IOutgoingService>();
         }
 
-        IOutcomeService _outcomeService;
+        IOutgoingService _outcomeService;
         IProductService _productService;
         public User user;
         FilterInfoCollection Cihazlar;
@@ -38,17 +38,23 @@ namespace Forms
             LoadProducts();
             tbxBarcode.Focus();
             GetCamera();
-            
         }
 
         private void GetCamera()
         {
-            Cihazlar = new FilterInfoCollection(FilterCategory.VideoInputDevice);
-            foreach (FilterInfo cihaz in Cihazlar)
+            try
             {
-                cmbKamera.Items.Add(cihaz.Name);
+                Cihazlar = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+                foreach (FilterInfo cihaz in Cihazlar)
+                {
+                    cmbKamera.Items.Add(cihaz.Name);
+                }
+                cmbKamera.SelectedIndex = 0;
             }
-            cmbKamera.SelectedIndex = 0;
+            catch (Exception exception)
+            {
+                DevExpress.XtraEditors.XtraMessageBox.Show(exception.Message);
+            }
         }
 
         private void LoadProducts()
@@ -74,25 +80,32 @@ namespace Forms
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            _productService.Add(new Product
+            try
             {
-                Name = tbxProductName.Text,
-                Barcode = tbxBarcode.Text,
-                Discount = Convert.ToInt32(tbxDiscount.Text),
-                PurchasePrice = Convert.ToDecimal(tbxPurhasePrice.Text),
-                SalePrice = Convert.ToDecimal(tbxSalePrice.Text),
-                StockAmount = Convert.ToInt32(tbxStockAmount.Text)
-            });
-            _outcomeService.Add(new Outcome
+                _productService.Add(new Product
+                {
+                    Name = tbxProductName.Text,
+                    Barcode = tbxBarcode.Text,
+                    Discount = Convert.ToInt32(tbxDiscount.Text),
+                    PurchasePrice = Convert.ToDecimal(tbxPurhasePrice.Text),
+                    SalePrice = Convert.ToDecimal(tbxSalePrice.Text),
+                    StockAmount = Convert.ToInt32(tbxStockAmount.Text)
+                });
+                _outcomeService.Add(new Outgoing
+                {
+                    Date = DateTime.Now,
+                    Amount = Convert.ToInt32(tbxStockAmount.Text),
+                    Name = tbxProductName.Text,
+                    PaymentMethod = "Güncellenecek",
+                    UnitPrice = Convert.ToDecimal(tbxPurhasePrice.Text)
+                });
+                LoadProducts();
+                DevExpress.XtraEditors.XtraMessageBox.Show("Ürün Girişi Yapıldı!");
+            }
+            catch (Exception exception)
             {
-                Date=DateTime.Now,
-                Amount=Convert.ToInt32(tbxStockAmount.Text),
-                Name= tbxProductName.Text,
-                PaymentMethod=  "Güncellenecek",
-                UnitPrice = Convert.ToDecimal(tbxPurhasePrice.Text)
-            });
-            LoadProducts();
-            DevExpress.XtraEditors.XtraMessageBox.Show("Ürün Girişi Yapıldı!");
+                DevExpress.XtraEditors.XtraMessageBox.Show(exception.Message);
+            }
         }
 
         private void btnRead_Click(object sender, EventArgs e)
@@ -103,9 +116,16 @@ namespace Forms
 
         private void StartCamera()
         {
-            kameram = new VideoCaptureDevice(Cihazlar[cmbKamera.SelectedIndex].MonikerString);
-            kameram.NewFrame += VideoCaptureDevice_NewFrame;
-            kameram.Start();
+            try
+            {
+                kameram = new VideoCaptureDevice(Cihazlar[cmbKamera.SelectedIndex].MonikerString);
+                kameram.NewFrame += VideoCaptureDevice_NewFrame;
+                kameram.Start();
+            }
+            catch (Exception exception)
+            {
+                DevExpress.XtraEditors.XtraMessageBox.Show(exception.Message);
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -125,12 +145,19 @@ namespace Forms
 
         private void CameraOff()
         {
-            if (kameram != null)
+            try
             {
-                if (kameram.IsRunning)
+                if (kameram != null)
                 {
-                    kameram.Stop();
+                    if (kameram.IsRunning)
+                    {
+                        kameram.Stop();
+                    }
                 }
+            }
+            catch (Exception exception)
+            {
+                DevExpress.XtraEditors.XtraMessageBox.Show(exception.Message);
             }
         }
 
@@ -168,27 +195,34 @@ namespace Forms
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            _productService.Update(new Product()
+            try
             {
-                ID = Convert.ToInt32(dqwProducts.CurrentRow.Cells[0].Value),
-                Barcode = Convert.ToString(tbxBarcode.Text),
-                Discount = Convert.ToInt32(tbxDiscount.Text),
-                Name = Convert.ToString(tbxProductName.Text),
-                PurchasePrice = Convert.ToDecimal(tbxPurhasePrice.Text),
-                SalePrice = Convert.ToDecimal(tbxSalePrice.Text),
-                StockAmount = Convert.ToInt32(tbxStockAmount.Text)
-            });
-            //Product p = _productService.Get(Convert.ToInt32(dqwProducts.CurrentRow.Cells[0].Value));
-            _outcomeService.Add(new Outcome()
+                _productService.Update(new Product()
+                {
+                    ID = Convert.ToInt32(dqwProducts.CurrentRow.Cells[0].Value),
+                    Barcode = Convert.ToString(tbxBarcode.Text),
+                    Discount = Convert.ToInt32(tbxDiscount.Text),
+                    Name = Convert.ToString(tbxProductName.Text),
+                    PurchasePrice = Convert.ToDecimal(tbxPurhasePrice.Text),
+                    SalePrice = Convert.ToDecimal(tbxSalePrice.Text),
+                    StockAmount = Convert.ToInt32(tbxStockAmount.Text)
+                });
+                //Product p = _productService.Get(Convert.ToInt32(dqwProducts.CurrentRow.Cells[0].Value));
+                _outcomeService.Add(new Outgoing()
+                {
+                    Date = DateTime.Now,
+                    Name = tbxProductName.Text,
+                    PaymentMethod = "Güncellenecek",
+                    Amount = Convert.ToInt32(tbxStockAmount.Text) - Convert.ToInt32(dqwProducts.CurrentRow.Cells[2].Value),
+                    UnitPrice = Convert.ToDecimal(tbxPurhasePrice.Text)
+                });
+                LoadProducts();
+                DevExpress.XtraEditors.XtraMessageBox.Show("Ürün Güncellendi!");
+            }
+            catch (Exception exception)
             {
-                Date = DateTime.Now,
-                Name = tbxProductName.Text,
-                PaymentMethod = "Güncellenecek",
-                Amount = Convert.ToInt32(tbxStockAmount.Text) - Convert.ToInt32(dqwProducts.CurrentRow.Cells[2].Value),
-                UnitPrice = Convert.ToDecimal(tbxPurhasePrice.Text) 
-            });
-            LoadProducts();
-            DevExpress.XtraEditors.XtraMessageBox.Show("Ürün Güncellendi!");
+                DevExpress.XtraEditors.XtraMessageBox.Show(exception.Message);
+            }
         }
     }
 }

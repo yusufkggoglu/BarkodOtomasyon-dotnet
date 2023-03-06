@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfOutcomeDal:EfEntityRepositoryBase<Outcome,BarcodeContext>,IOutcomeDal
+    public class EfOutgoingDal:EfEntityRepositoryBase<Outgoing,BarcodeContext>,IOutgoingDal
     {
     }
 }

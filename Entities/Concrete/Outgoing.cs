@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entities.Concrete
 {
-    public class Outcome:IEntity
+    public class Outgoing:IEntity
     {
         public int ID { get; set; }
         public string Name { get; set; }
